@@ -334,3 +334,10 @@
 0:0:0:0:0:0:0:1 - - [15/Nov/2017:18:46:10 +0530] "GET /LoginFormSpringJdbcAnnotation/login HTTP/1.1" 200 960
 0:0:0:0:0:0:0:1 - - [15/Nov/2017:18:46:16 +0530] "GET /LoginFormSpringJdbcAnnotation/welcome HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [15/Nov/2017:18:46:16 +0530] "GET /LoginFormSpringJdbcAnnotation/login HTTP/1.1" 200 960
+127.0.0.1 - - [15/Nov/2017:19:35:08 +0530] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [15/Nov/2017:19:35:09 +0530] "GET /AdditionExample/ HTTP/1.1" 200 173
+0:0:0:0:0:0:0:1 - - [15/Nov/2017:19:35:10 +0530] "GET /favicon.ico HTTP/1.1" 404 1084
+0:0:0:0:0:0:0:1 - - [15/Nov/2017:19:35:15 +0530] "GET /AdditionExample/add?tf1=1&tf2=2 HTTP/1.1" 200 266
+0:0:0:0:0:0:0:1 - - [15/Nov/2017:19:39:23 +0530] "GET /LoginFormSpringJdbcAnnotation/ HTTP/1.1" 200 381
+0:0:0:0:0:0:0:1 - - [15/Nov/2017:19:39:25 +0530] "GET /LoginFormSpringJdbcAnnotation/register HTTP/1.1" 200 1530
+0:0:0:0:0:0:0:1 - - [15/Nov/2017:19:40:25 +0530] "POST /LoginFormSpringJdbcAnnotation/regProcess HTTP/1.1" 200 960
