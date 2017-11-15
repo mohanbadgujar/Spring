@@ -1,0 +1,39 @@
+package com.bridgelabz.service.utility;
+
+public class MailService {
+
+	private JavaMailSender mailSender;
+
+    @RequestMapping(method = RequestMethod.POST)
+    public String register(@RequestParam("username") String username,
+            @RequestParam("password") String password, @RequestParam("email") String emailAddress, Model model) {
+        
+        String status = null;
+        
+        try {
+            MimeMessage message = mailSender.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(message,true,"UTF-8");
+            helper.setFrom("Administrator");
+            helper.setTo(emailAddress);
+            helper.setSubject("Registration confirmation");
+            
+            String text = "Thank you for your registration. Your login details are:<br />"
+                    + "username:<b>" + username + "</b><br />"
+                    + "password:<b>" + password + "</b>" ;
+            
+            helper.setText(text, true);
+            mailSender.send(message);
+            status = "Confirmation email is sent to your address (" + emailAddress + ")";
+        } catch (MessagingException e) {
+            status = "There was an error in email sending. Please check your email address: " + emailAddress;
+        }
+
+        model.addAttribute("message", status);
+        return "showMessage";
+    }
+
+    @Autowired
+    public void setMailSender(JavaMailSender mailSender) {
+        this.mailSender = mailSender;
+    }
+}

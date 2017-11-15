@@ -1,0 +1,23 @@
+package com.bridgelabz.controller;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.bridgelabz.dao.UserDao;
+import com.bridgelabz.model.User;
+
+public class App {
+
+	public static void main(String args[])
+	{
+		System.out.println("hi");
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml");
+		
+		UserDao userDao = (UserDao) context.getBean("userDAO");
+		User user = new User("mohan","mohanba@gma.co","mohan","mohan","9595682995","10111993","Male");
+		userDao.insert(user);
+
+	}
+
+}

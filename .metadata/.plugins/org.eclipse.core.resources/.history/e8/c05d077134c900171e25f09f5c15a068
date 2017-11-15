@@ -1,0 +1,59 @@
+
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Registration</title>
+</head>
+<body>
+	<form:form id="regForm" modelAttribute="user" action="regProcess"
+		method="post">
+		<table align="center">
+			<tr>
+				<td><form:label path="fullName">FirstName</form:label></td>
+				<td><form:input path="fullName" name="fullName" id="fullName" /></td>
+				<td><font color="red"><form:errors path="fullName" /></font></td>
+			</tr>
+			<tr>
+				<td><form:label path="email">Email</form:label></td>
+				<td><form:input path="email" name="email" id="email" /></td>
+				<td><font color="red"><form:errors path="email" /></font></td>
+			</tr>
+
+			<tr>
+				<td><form:label path="password">Password</form:label></td>
+				<td><form:password path="password" name="password" id="password" /></td>
+				<td><font color="red"><form:errors path="password" /></font></td>
+			</tr>
+			<tr>
+				<td><form:label path="address">Address</form:label></td>
+				<td><form:input path="address" name="address" id="address" />
+				<td><font color="red"><form:errors path="address" /></font></td>
+				</td>
+			</tr>
+			<tr>
+				<td><form:label path="phone">Phone</form:label></td>
+				<td><form:input path="phone" name="phone" id="phone" /></td>
+				<td><font color="red"><form:errors path="phone" /></font></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><form:button id="register" name="register">Register</form:button>
+				</td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td></td>
+				<td><a href="home.jsp">Home</a></td>
+			</tr>
+		</table>
+	</form:form>
+	<table align="center">
+		<tr>
+			<td style="font-style: italic; color: red;">${message}</td>
+		</tr>
+	</table>
+</body>
+</html>

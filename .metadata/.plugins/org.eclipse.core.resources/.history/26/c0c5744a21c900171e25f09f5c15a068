@@ -1,0 +1,18 @@
+package com.bridgelabz.service.business;
+
+import com.bridgelabz.model.User;
+
+public class UserService {
+
+	public User authUser(String email, String password) {
+		return null;
+		
+		
+	}
+
+	public void saveuser(User user) {
+		
+		
+	}
+
+}

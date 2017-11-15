@@ -1,0 +1,28 @@
+package com.bridgelabz.service.business;
+
+import org.springframework.stereotype.Service;
+
+import com.bridgelabz.model.User;
+
+@Service
+public class UserService {
+
+	
+	public User authUser(String email, String password) {
+		return null;
+		
+		
+	}
+
+	public Boolean saveuser(User user) {
+		System.out.println("jdfkgoi");
+		return true;
+		
+		
+	}
+
+	public Object findByUserEmail(String fullName) {
+		return null;
+	}
+
+}

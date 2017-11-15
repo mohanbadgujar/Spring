@@ -1,0 +1,36 @@
+package com.bridgelabz.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import javax.sql.DataSource;
+
+
+import com.bridgelabz.model.User;
+
+
+
+public class JdbcUserDAO implements UserDao {
+
+	private DataSource dataSource;
+
+	public void setDataSource(DataSource dataSource) {
+		this.dataSource = dataSource;
+	}
+	
+	public void insert(User user) {
+		
+		String sql = "insert into User_Details(name, email, password, mobile, birth, sex) values(?,?,?,?,?,?)";
+		Connection con = null;
+		
+		try {
+			con = dataSource.getConnection();
+			PreparedStatement pstmt = con.prepareStatement(sql);
+			
+			
+		} catch (Exception e) {
+			
+		}
+	}
+
+}

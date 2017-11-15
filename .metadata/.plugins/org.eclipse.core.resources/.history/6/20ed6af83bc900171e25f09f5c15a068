@@ -1,0 +1,36 @@
+package com.bridgelabz;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.bridgelabz.service.Service;
+
+@Controller
+public class AddController {
+
+	@RequestMapping("/add")
+	public ModelAndView add(@RequestParam("tf1") int i,@RequestParam("tf2") int j,HttpServletRequest request, HttpServletResponse response) {
+
+/*		
+/*		int a = Integer.parseInt(request.getParameter("tf1"));
+
+		int b = Integer.parseInt(request.getParameter("tf2"));
+		
+		System.out.println("a value"+a);
+		System.out.println("b value"+b);*/
+
+		Service as = new Service();
+		int c = as.add(i, j);
+
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("welcome.jsp");
+		mv.addObject("result", c);
+
+		return mv;
+	}
+
+}

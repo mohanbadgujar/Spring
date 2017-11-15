@@ -1,0 +1,6 @@
+com/bridgelabz/model/User.class
+com/bridgelabz/model/Login.class
+com/bridgelabz/controller/LoginController.class
+com/bridgelabz/service/business/UserService.class
+com/bridgelabz/validator/UserValidation.class
+com/bridgelabz/controller/RegistrationController.class

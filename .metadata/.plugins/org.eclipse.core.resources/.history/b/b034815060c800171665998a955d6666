@@ -1,0 +1,6 @@
+package com.bridgelabz.dao;
+
+
+public class UserDaoImplementation implements UserDao{
+
+}

@@ -1,0 +1,13 @@
+package com.bridgelabz.dao;
+
+import com.bridgelabz.model.User;
+
+public class UserDaoImplementation implements UserDao{
+
+
+	public void login(User user) {
+		
+		
+	}
+
+}

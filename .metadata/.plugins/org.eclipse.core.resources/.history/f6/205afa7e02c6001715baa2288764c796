@@ -1,0 +1,51 @@
+package com.bridgelabz.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import javax.sql.DataSource;
+
+
+import com.bridgelabz.model.User;
+
+
+
+public class JdbcUserDAO implements UserDao {
+
+	private DataSource dataSource;
+
+	public void setDataSource(DataSource dataSource) {
+		this.dataSource = dataSource;
+	}
+	
+	public void insert(User user) {
+		
+		String sql = "insert into User_Details(name, email, password, mobile, birth, sex) values(?,?,?,?,?,?)";
+		Connection con = null;
+		int i = 0;
+		
+		try {
+			con = dataSource.getConnection();
+			PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setString(1, user.getName());// 1 specifies the first parameter in the query
+			stmt.setString(2, user.getEmail());
+			stmt.setString(3, user.getPassword());
+			stmt.setString(4, user.getMobile());
+			stmt.setString(5, user.getBirth());
+			stmt.setString(6, user.getSex());
+			
+			i = stmt.executeUpdate();
+			System.out.println(i + " records inserted");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			if (con != null) {
+				try {
+				con.close();
+				} catch (SQLException e) {}
+		}
+	}
+  }
+}

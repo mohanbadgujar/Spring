@@ -1,0 +1,41 @@
+package com.bridgelabz.validator;
+
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.validation.Errors;
+import org.springframework.validation.ValidationUtils;
+import org.springframework.validation.Validator;
+
+import com.bridgelabz.model.User;
+import com.bridgelabz.service.business.UserService;
+
+public class UserValidation implements Validator {
+
+	
+	public boolean supports(Class<?> clazz) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	public void validate(Object target, Errors errors) {
+		 UserService service = new UserService();
+		 User user = (User) target;
+
+	        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "username", "NotEmpty");
+	        if (user.getFullName().length() < 6 || user.getFullName().length() > 32) {
+	            errors.rejectValue("fullName", "Size.regForm.username");
+	        }
+	        if (service.findByUserEmail(user.getEmail()) != null) {
+	            errors.rejectValue("email", "Duplicate.regForm.email");
+	        }
+
+	        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "password", "NotEmpty");
+	        if (user.getPassword().length() < 8 || user.getPassword().length() > 32) {
+	            errors.rejectValue("password", "Size.regForm.password");
+	        }
+
+	        
+	}
+	
+	
+}

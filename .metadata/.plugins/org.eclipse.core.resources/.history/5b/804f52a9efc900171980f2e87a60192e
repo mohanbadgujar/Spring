@@ -1,0 +1,34 @@
+package com.bridgelabz.service.utility;
+
+import org.springframework.mail.javamail.JavaMailSender;
+
+import com.bridgelabz.model.User;
+
+public class SendEmail {
+
+	  private JavaMailSender mailSender;
+	  
+	  public String sendEmail(User user)
+	  {
+		  String status = null;
+	        
+	        try {
+	            MimeMessage message = mailSender.createMimeMessage();
+	            MimeMessageHelper helper = new MimeMessageHelper(message,true,"UTF-8");
+	            helper.setFrom("Administrator");
+	            helper.setTo(emailAddress);
+	            helper.setSubject("Registration confirmation");
+	            helper.setText(text, true);
+	            mailSender.send(message);
+	            status = "Confirmation email is sent to your address (" + emailAddress + ")";
+	        } catch (MessagingException e) {
+	            status = "There was an error in email sending. Please check your email address: " + emailAddress;
+	        }
+
+	        model.addAttribute("message", status);
+	        return "showMessage";
+		  
+		  
+	  }
+	
+}

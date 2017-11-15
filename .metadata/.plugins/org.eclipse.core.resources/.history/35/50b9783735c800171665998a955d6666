@@ -1,0 +1,116 @@
+package com.bridgelabz.dao;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Properties;
+
+import com.bridgelabz.model.User;
+
+public class UserDaoImplementation implements UserDao {
+
+	/*private DataSource dataSource;
+
+	public void setDataSource(DataSource dataSource) {
+		this.dataSource = dataSource;
+	}*/
+	
+	 private Properties prop = null;
+	 
+	 public UserDaoImplementation(){
+         
+	        InputStream is = null;
+	        try {
+	            this.prop = new Properties();
+	            is = this.getClass().getResourceAsStream("/config.properties");
+	            prop.load(is);
+	        } catch (FileNotFoundException e) {
+	            e.printStackTrace();
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	    }
+	     
+	    public String getPropertyValue(String key){
+	        return this.prop.getProperty(key);
+	    }
+	    
+	    
+	    String driver = getPropertyValue("driverClassName");
+		String url = getPropertyValue("url");
+
+		public void insert(User user) {
+
+			
+			String sql = "insert into User_Details(name, email, password, mobile, birth, sex) values(?,?,?,?,?,?)";
+		
+			int i = 0;
+			Connection con = null;
+			
+			try {
+				
+				// Register the driver class
+				Class.forName(driver);
+
+				// Create the connection object
+				 con = DriverManager.getConnection(url, "root", "bridgeit");
+				
+				//con = dataSource.getConnection();
+				PreparedStatement stmt = con.prepareStatement(sql);
+				stmt.setString(1, user.getName());// 1 specifies the first parameter in the query
+				stmt.setString(2, user.getEmail());
+				stmt.setString(3, user.getPassword());
+				stmt.setString(4, user.getMobile());
+				stmt.setDate(5, user.getBirth());
+				stmt.setString(6, user.getSex());
+
+				i = stmt.executeUpdate();
+				System.out.println(i + " records inserted");
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			} finally {
+				if (con != null) {
+					try {
+						con.close();
+					} catch (SQLException e) {
+					}
+				}
+			}
+		}
+			
+		public void delete(User user) {
+			
+			try {
+
+				// Register the driver class
+				Class.forName(driver);
+
+				// create a database connection
+				Connection conn = DriverManager.getConnection(url, "root", "bridgeit");
+
+				// create a Sql date object so we can use it in our INSERT statement
+				// Calendar calendar = Calendar.getInstance();
+				// java.sql.Date startDate = new java.sql.Date(calendar.getTime().getTime());
+
+				String query = "delete from emp where id = ?";
+				PreparedStatement preparedStmt = conn.prepareStatement(query);
+				preparedStmt.setInt(1, 30);
+
+				// execute the PreparedStatement
+				preparedStmt.execute();
+
+				conn.close();
+
+			} catch (Exception e) {
+				System.err.println("Got an exception!");
+				System.err.println(e.getMessage());
+			}
+		}
+
+	}
+

@@ -1,0 +1,65 @@
+package com.bridgelabz.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.bridgelabz.model.User;
+import com.bridgelabz.service.business.UserService;
+import com.bridgelabz.validator.UserValidation;
+
+@Controller
+public class RegistrationController 
+{
+
+	@RequestMapping(value="home")
+	public String showhome() 
+	{
+		
+		//ModelAndView mv = new ModelAndView("register");
+		//mv.addObject("user", new User());
+		return "redirect:/";
+		
+	}
+	
+	@RequestMapping(value="errorsregister")
+	public ModelAndView showRegister() {
+		
+		ModelAndView mv = new ModelAndView("register");
+		mv.addObject("user", new User());
+		return mv;
+		
+	}
+	
+	@RequestMapping(value="/regProcess" , method=RequestMethod.POST)
+	public ModelAndView regProcess(@ModelAttribute("user") User user, BindingResult result) {
+		
+		ModelAndView mav =null;
+		UserService service = new UserService();
+		UserValidation validation = new UserValidation();
+		validation.validate(user, result);
+		System.out.println("Error" + result.hasErrors());
+		if( !result.hasErrors() )
+		{
+			
+			Boolean res = service.saveuser(user);
+			
+			if( !res ) 
+			{
+				mav = new ModelAndView("register");
+				mav.addObject("message", "Something went wrong");
+				return mav;
+			}
+			
+			return new ModelAndView("login");
+			
+		}
+
+		return new ModelAndView("register");;
+		
+	}
+
+}

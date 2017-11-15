@@ -1,0 +1,10 @@
+package com.bridgelabz.service.business;
+
+public class UserService {
+
+	public void authUser(String email, String password) {
+		
+		
+	}
+
+}
