@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.stereotype.Repository;
 
 import com.bridgelabz.model.User;
+
 @Repository("dao")
 @Configurable
 public class UserDaoImpl implements UserDao {
@@ -88,7 +89,7 @@ public class UserDaoImpl implements UserDao {
 			}
 
 			// close the connection object
-			/*con.close();*/
+			/* con.close(); */
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -97,45 +98,47 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	public boolean checkUserAlredyExits(String email) {
-		
+
 		try {
 
-			/*String myDriver = "com.mysql.jdbc.Driver";
-			String myUrl = "jdbc:mysql://localhost:3306/SpringDemo";
+			/*
+			 * String myDriver = "com.mysql.jdbc.Driver"; String myUrl =
+			 * "jdbc:mysql://localhost:3306/SpringDemo";
+			 * 
+			 * // Register the driver class Class.forName(myDriver);
+			 * 
+			 * // Create the connection object Connection con =
+			 * DriverManager.getConnection(myUrl, "root", "bridgeit");
+			 */
 
-			// Register the driver class
-			Class.forName(myDriver);
-
-			// Create the connection object
-			Connection con = DriverManager.getConnection(myUrl, "root", "bridgeit");*/
-			
 			con = dataSource.getConnection();
 			System.out.println("connection");
-			
+
 			String sql = "select * from User Where email=?";
 
 			// create the statement object
 			PreparedStatement stmt = con.prepareStatement(sql);
 
-			stmt.setString(1,email);
+			stmt.setString(1, email);
 
 			ResultSet rs = stmt.executeQuery();
 			// check is any data in ResultSet
 			while (rs.next()) {
 				System.out.println("I Am here");
 				rs.getString("email");
-				return  true;
+				return true;
 			}
 
 			// close the connection object
-			/*con.close();
-*/
+			/*
+			 * con.close();
+			 */
 		} catch (Exception e) {
-			
+
 			System.out.println("Exc");
 			e.printStackTrace();
 		}
-		
+
 		return true;
 	}
 
@@ -145,45 +148,30 @@ public class UserDaoImpl implements UserDao {
 
 	@Override
 	public boolean resetPassword(User user) {
-		
-		
+
 		try {
 
-			String myDriver = "com.mysql.jdbc.Driver";
-			String myUrl = "jdbc:mysql://localhost:3306/SpringDemo";
-
-			// Register the driver class
-			Class.forName(myDriver);
-
-			// Creating connection
-			Connection conn = DriverManager.getConnection(myUrl, "root", "bridgeit");
+			con = dataSource.getConnection();
 
 			// create the java mysql update preparedstatement
 			String query = "update User set password = ? where email = ?";
-			PreparedStatement preparedStmt = conn.prepareStatement(query);
-			preparedStmt.setString(1, user.getPassword());
+			PreparedStatement preparedStmt = con.prepareStatement(query);
 			preparedStmt.setString(2, user.getEmail());
+			preparedStmt.setString(1, user.getPassword());
 
 			// execute the preparedstatement
 			preparedStmt.execute();
 
-			conn.close();
-			
+			con.close();
+
+			return true;
+
 		} catch (Exception e) {
 			System.err.println("Got an exception!");
 			System.err.println(e.getMessage());
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		return false;
 	}
-	
+
 }

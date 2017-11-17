@@ -30,7 +30,7 @@ public class SendEmail {
 			
 			mimeHelper.setFrom("Administrator");
 			mimeHelper.setSubject("Password Reset");
-			mimeHelper.setText("<html><body>hi,<br/><a href='http://localhost:8080/ForgotPassword/newPassword/"+emailId+"/'> Click here</a> to reset password</body></html>",true);
+			mimeHelper.setText("<html><body>hi,<br/><a href='http://localhost:8080/LoginFormSpringJdbcAnnotation/newPassword/"+emailId+"/'> Click here</a> to reset password</body></html>",true);
 			mailSender.send(message);
 		} catch (MessagingException e) {
 			System.out.println("Error Sending email "+ e.getMessage());

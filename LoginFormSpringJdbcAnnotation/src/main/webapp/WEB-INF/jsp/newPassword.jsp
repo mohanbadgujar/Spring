@@ -8,19 +8,19 @@
 </head>
 <body>
 Enter New Password for ${emailid}
-	<form action="#">
+	<form action="resetpassword" method="post">
 		<table>
 			<tr>
 				<td>Password</td>
-				<td><input type="password" id="txtPass"> </td>
+				<td><input type="password" name="txtPass"> </td>
 			</tr>
 			<tr>
 				<td>Retype-Password</td>
-				<td><input type="password" id="txtPass"> </td>
+				<td><input type="password" name="txtRePass"> </td>
 			</tr>
 			<tr>
 			
-				<td colspan="2"><center><input type="button" value="Save"> </center> </td>
+				<td colspan="2"><center><input type="submit"  value="Save"> </center> </td>
 			
 			</tr>
 			

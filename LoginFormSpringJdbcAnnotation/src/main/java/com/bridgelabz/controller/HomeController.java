@@ -2,13 +2,18 @@ package com.bridgelabz.controller;
 
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
+import com.bridgelabz.model.User;
 import com.bridgelabz.service.utility.SendEmail;
 
 @Controller
@@ -20,7 +25,7 @@ public class HomeController {
 	@RequestMapping(value="/")
 	public String homePage()
 	{
-		return "index"; 
+		return "login"; 
 	}
 	
 	@RequestMapping(value="/forgotPassword")
