@@ -771,3 +771,562 @@ Nov 15, 2017 19:35:09.34 [2965:3003:1115/193509.347005:ERROR:browser_gpu_channel
 Nov 15, 2017 19:35:09.48 Created new window in existing browser session.
 Nov 15, 2017 19:39:23.14 [3086:3124:1115/193923.145127:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
 Nov 15, 2017 19:39:23.20 Created new window in existing browser session.
+Nov 15, 2017 20:04:50.56 [3823:3860:1115/200450.561469:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 15, 2017 20:04:50.58 Created new window in existing browser session.
+Nov 15, 2017 20:05:26.93 [3925:3962:1115/200526.931936:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 15, 2017 20:05:26.97 Created new window in existing browser session.
+Nov 15, 2017 20:22:50.06 [4246:4283:1115/202250.062260:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 15, 2017 20:22:50.10 Created new window in existing browser session.
+Nov 15, 2017 20:36:03.53 [4757:4794:1115/203603.538198:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 15, 2017 20:36:03.57 Created new window in existing browser session.
+
+Nov 16, 2017 11:08:54.90 NEW SESSION
+Nov 16, 2017 11:08:54.90 [6273:6345:1116/110854.849616:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 11:08:55.09 [6268:6347:1116/110854.849593:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 11:08:55.55 Created new window in existing browser session.
+Nov 16, 2017 11:08:55.55 Created new window in existing browser session.
+Nov 16, 2017 11:11:08.48 [6613:6650:1116/111108.484215:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 11:11:08.62 Created new window in existing browser session.
+Nov 16, 2017 11:14:57.94 [6894:6931:1116/111457.940356:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 11:14:58.06 Created new window in existing browser session.
+Nov 16, 2017 11:16:44.40 [7133:7173:1116/111644.408069:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 11:16:44.48 Created new window in existing browser session.
+Nov 16, 2017 11:20:46.05 [7328:7366:1116/112046.051108:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 11:20:46.05 Created new window in existing browser session.
+Nov 16, 2017 11:25:36.81 [7607:7644:1116/112536.816890:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 11:25:36.87 Created new window in existing browser session.
+Nov 16, 2017 11:33:18.91 [7791:7829:1116/113318.919088:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 11:33:18.95 Created new window in existing browser session.
+Nov 16, 2017 11:34:29.07 [8026:8063:1116/113429.078019:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 11:34:29.11 Created new window in existing browser session.
+Nov 16, 2017 11:48:41.22 [8592:8629:1116/114841.222158:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 11:48:41.24 Created new window in existing browser session.
+Nov 16, 2017 12:22:16.88 [9133:9170:1116/122216.889560:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 12:22:16.91 Created new window in existing browser session.
+Nov 16, 2017 12:24:26.18 [9371:9408:1116/122426.185627:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 12:24:26.21 Created new window in existing browser session.
+Nov 16, 2017 12:29:41.52 [9879:9916:1116/122941.520888:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 12:29:41.54 Created new window in existing browser session.
+Nov 16, 2017 12:37:26.39 [10364:10401:1116/123726.394352:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 12:37:26.41 Created new window in existing browser session.
+Nov 16, 2017 12:38:40.34 [10601:10638:1116/123840.348292:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 12:38:40.39 Created new window in existing browser session.
+Nov 16, 2017 12:40:52.09 [10850:10887:1116/124052.092216:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 12:40:52.17 Created new window in existing browser session.
+Nov 16, 2017 12:41:05.06 [10941:10978:1116/124105.067766:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 12:41:05.09 Created new window in existing browser session.
+Nov 16, 2017 12:45:39.63 [11313:11350:1116/124539.639459:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 12:45:39.69 Created new window in existing browser session.
+Nov 16, 2017 12:52:17.27 [11542:11579:1116/125217.279250:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 12:52:17.32 Created new window in existing browser session.
+Nov 16, 2017 12:52:43.87 [11737:11774:1116/125243.875931:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 12:52:43.88 Created new window in existing browser session.
+Nov 16, 2017 12:52:54.51 [11833:11870:1116/125254.515076:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 12:52:54.53 Created new window in existing browser session.
+Nov 16, 2017 14:50:01.69 [13126:13163:1116/145001.699729:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 14:50:01.80 Created new window in existing browser session.
+Nov 16, 2017 14:50:30.61 [13237:13274:1116/145030.616695:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 14:50:30.66 Created new window in existing browser session.
+Nov 16, 2017 15:26:32.67 [14806:14843:1116/152632.675811:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:26:32.78 Created new window in existing browser session.
+Nov 16, 2017 15:28:09.36 [15011:15048:1116/152809.367665:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:28:09.39 Created new window in existing browser session.
+Nov 16, 2017 15:31:13.45 [15286:15323:1116/153113.457586:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:31:13.51 Created new window in existing browser session.
+Nov 16, 2017 15:33:24.60 [15562:15599:1116/153324.600862:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:33:24.65 Created new window in existing browser session.
+Nov 16, 2017 15:35:18.43 [15822:15859:1116/153518.431771:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:35:18.50 Created new window in existing browser session.
+Nov 16, 2017 15:41:46.20 [16289:16326:1116/154146.209092:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:41:46.27 Created new window in existing browser session.
+Nov 16, 2017 15:45:43.53 [16653:16690:1116/154543.529912:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:45:43.58 Created new window in existing browser session.
+Nov 16, 2017 15:46:14.79 [16863:16900:1116/154614.791171:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:46:14.87 Created new window in existing browser session.
+Nov 16, 2017 15:47:18.23 [17087:17124:1116/154718.230038:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:47:18.30 Created new window in existing browser session.
+Nov 16, 2017 15:49:24.65 [17332:17369:1116/154924.650834:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:49:24.73 Created new window in existing browser session.
+Nov 16, 2017 15:50:32.95 [17559:17596:1116/155032.951461:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:50:33.05 Created new window in existing browser session.
+Nov 16, 2017 15:51:44.73 [17807:17844:1116/155144.733668:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:51:44.79 Created new window in existing browser session.
+Nov 16, 2017 15:52:19.38 [18026:18063:1116/155219.387756:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:52:19.45 Created new window in existing browser session.
+Nov 16, 2017 15:53:28.08 [18288:18325:1116/155328.081481:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:53:28.14 Created new window in existing browser session.
+Nov 16, 2017 15:54:15.56 [18504:18541:1116/155415.564236:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 15:54:15.61 Created new window in existing browser session.
+Nov 16, 2017 15:55:21.55 1510827921550	addons.webextension.jid1-NIfFY2CA8fy1tg@jetpack	WARN	Please specify whether you want browser_style or not in your browser_action options.
+Nov 16, 2017 15:55:24.72 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: recipe-client-addon-run
+Nov 16, 2017 15:55:24.72 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/settings.js 21
+Nov 16, 2017 15:55:24.72 [[Exception stack
+Nov 16, 2017 15:55:24.72 Settings/this._init</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/settings.js:21:11
+Nov 16, 2017 15:55:24.72 Current stack
+Nov 16, 2017 15:55:24.72 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 15:55:24.72 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 15:55:24.72 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 15:55:24.72 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 15:55:24.72 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 15:55:24.72 ]]
+Nov 16, 2017 15:55:24.72 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js 95
+Nov 16, 2017 15:55:24.72 [[Exception stack
+Nov 16, 2017 15:55:24.72 checkUserId/userIDPromise</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js:95:13
+Nov 16, 2017 15:55:24.72 Current stack
+Nov 16, 2017 15:55:24.72 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 15:55:24.72 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 15:55:24.72 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 15:55:24.72 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 15:55:24.72 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 15:55:24.72 ]]
+Nov 16, 2017 15:55:24.72 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js 95
+Nov 16, 2017 15:55:24.72 [[Exception stack
+Nov 16, 2017 15:55:24.72 checkUserId/userIDPromise</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js:95:13
+Nov 16, 2017 15:55:24.72 Current stack
+Nov 16, 2017 15:55:24.72 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 15:55:24.72 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 15:55:24.72 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 15:55:24.72 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 15:55:24.72 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 15:55:24.72 ]]
+Nov 16, 2017 15:55:24.72 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 686
+Nov 16, 2017 15:55:24.72 [[Exception stack
+Nov 16, 2017 15:55:24.72 count_cache_init/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:686:1
+Nov 16, 2017 15:55:24.72 Current stack
+Nov 16, 2017 15:55:24.72 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 15:55:24.72 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 15:55:24.72 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 15:55:24.72 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 15:55:24.72 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 15:55:24.72 ]]
+Nov 16, 2017 15:55:24.74 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js 95
+Nov 16, 2017 15:55:24.74 [[Exception stack
+Nov 16, 2017 15:55:24.74 checkUserId/userIDPromise</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js:95:13
+Nov 16, 2017 15:55:24.74 Current stack
+Nov 16, 2017 15:55:24.74 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 15:55:24.74 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 15:55:24.74 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 15:55:24.74 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 15:55:24.74 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 15:55:24.74 ]]
+Nov 16, 2017 15:55:24.74 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 573
+Nov 16, 2017 15:55:24.74 [[Exception stack
+Nov 16, 2017 15:55:24.74 get_custom_filters_text/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:573:5
+Nov 16, 2017 15:55:24.74 Current stack
+Nov 16, 2017 15:55:24.74 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 15:55:24.74 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 15:55:24.74 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 15:55:24.75 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 15:55:24.75 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 15:55:24.75 ]]
+Nov 16, 2017 15:55:24.75 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/filtering/myfilters.js 568
+Nov 16, 2017 15:55:24.75 [[Exception stack
+Nov 16, 2017 15:55:24.75 MyFilters.prototype.checkFilterUpdates/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/filtering/myfilters.js:568:9
+Nov 16, 2017 15:55:24.75 Current stack
+Nov 16, 2017 15:55:24.75 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 15:55:24.75 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 15:55:24.75 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 15:55:24.75 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 15:55:24.75 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 15:55:24.75 ]]
+Nov 16, 2017 15:55:25.00 *** UTM:SVC TimerManager:registerTimer - id: telemetry_modules_ping
+Nov 16, 2017 15:55:25.00 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Nov 16, 2017 15:55:26.68 1510827926680	addons.webextension.jid1-NIfFY2CA8fy1tg@jetpack	WARN	Please specify whether you want browser_style or not in your browser_action options.
+Nov 16, 2017 15:55:27.75 Extension error: TypeError: getSettings(...) is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 834
+Nov 16, 2017 15:55:27.75 [[Exception stack
+Nov 16, 2017 15:55:27.75 processTab@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:834:22
+Nov 16, 2017 15:55:27.75 getCurrentTabInfo/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:882:7
+Nov 16, 2017 15:55:27.75 Current stack
+Nov 16, 2017 15:55:27.75 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 15:55:27.75 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 15:55:27.75 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:349:48
+Nov 16, 2017 15:55:27.75 ]]
+Nov 16, 2017 15:55:28.39 Extension error: TypeError: getSettings(...) is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 834
+Nov 16, 2017 15:55:28.39 [[Exception stack
+Nov 16, 2017 15:55:28.39 processTab@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:834:22
+Nov 16, 2017 15:55:28.39 getCurrentTabInfo/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:882:7
+Nov 16, 2017 15:55:28.39 Current stack
+Nov 16, 2017 15:55:28.39 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 15:55:28.39 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 15:55:28.39 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:349:48
+Nov 16, 2017 15:55:28.39 ]]
+Nov 16, 2017 15:55:28.39 Extension error: TypeError: getSettings(...) is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 834
+Nov 16, 2017 15:55:28.39 [[Exception stack
+Nov 16, 2017 15:55:28.39 processTab@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:834:22
+Nov 16, 2017 15:55:28.39 getCurrentTabInfo/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:882:7
+Nov 16, 2017 15:55:28.39 Current stack
+Nov 16, 2017 15:55:28.39 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 15:55:28.39 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 15:55:28.39 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:349:48
+Nov 16, 2017 15:55:28.39 ]]
+Nov 16, 2017 16:10:16.64 1510828816644	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+Nov 16, 2017 16:10:16.79 1510828816796	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+Nov 16, 2017 16:10:16.87 1510828816877	addons.update-checker	WARN	Update manifest for deployment-checker@mozilla.org did not contain an updates property
+Nov 16, 2017 16:10:16.91 1510828816914	addons.update-checker	WARN	Update manifest for webcompat@mozilla.org did not contain an updates property
+Nov 16, 2017 16:10:16.92 1510828816925	addons.update-checker	WARN	Update manifest for aushelper@mozilla.org did not contain an updates property
+Nov 16, 2017 16:10:17.11 1510828817118	addons.update-checker	WARN	Update manifest for clicktoplay-rollout@mozilla.org did not contain an updates property
+Nov 16, 2017 16:10:17.16 1510828817166	addons.update-checker	WARN	Update manifest for formautofill@mozilla.org did not contain an updates property
+Nov 16, 2017 16:10:17.22 1510828817226	addons.update-checker	WARN	Update manifest for activity-stream@mozilla.org did not contain an updates property
+Nov 16, 2017 16:10:17.26 1510828817261	addons.update-checker	WARN	Update manifest for onboarding@mozilla.org did not contain an updates property
+Nov 16, 2017 16:10:17.27 1510828817270	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Nov 16, 2017 16:10:17.44 1510828817447	addons.update-checker	WARN	Update manifest for sbv4-gradual-rollout@mozilla.com did not contain an updates property
+Nov 16, 2017 16:10:17.52 1510828817522	addons.update-checker	WARN	Update manifest for timecop@mozilla.com did not contain an updates property
+Nov 16, 2017 16:10:17.53 1510828817532	addons.update-checker	WARN	Update manifest for followonsearch@mozilla.com did not contain an updates property
+Nov 16, 2017 16:10:22.48 1510828822482	addons.xpi	ERROR	Failed to clean updated system add-ons directories.
+Nov 16, 2017 16:50:43.33 1510831243330	addons.webextension.jid1-NIfFY2CA8fy1tg@jetpack	WARN	Please specify whether you want browser_style or not in your browser_action options.
+Nov 16, 2017 16:50:43.99 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: recipe-client-addon-run
+Nov 16, 2017 16:50:44.02 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/settings.js 21
+Nov 16, 2017 16:50:44.02 [[Exception stack
+Nov 16, 2017 16:50:44.02 Settings/this._init</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/settings.js:21:11
+Nov 16, 2017 16:50:44.02 Current stack
+Nov 16, 2017 16:50:44.02 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:50:44.02 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:50:44.02 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 16:50:44.02 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 16:50:44.02 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 16:50:44.02 ]]
+Nov 16, 2017 16:50:44.02 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js 95
+Nov 16, 2017 16:50:44.02 [[Exception stack
+Nov 16, 2017 16:50:44.02 checkUserId/userIDPromise</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js:95:13
+Nov 16, 2017 16:50:44.02 Current stack
+Nov 16, 2017 16:50:44.02 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:50:44.02 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:50:44.02 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 16:50:44.02 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 16:50:44.02 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 16:50:44.02 ]]
+Nov 16, 2017 16:50:44.02 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js 95
+Nov 16, 2017 16:50:44.02 [[Exception stack
+Nov 16, 2017 16:50:44.02 checkUserId/userIDPromise</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js:95:13
+Nov 16, 2017 16:50:44.02 Current stack
+Nov 16, 2017 16:50:44.02 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:50:44.02 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:50:44.02 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 16:50:44.02 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 16:50:44.02 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 16:50:44.02 ]]
+Nov 16, 2017 16:50:44.02 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 686
+Nov 16, 2017 16:50:44.02 [[Exception stack
+Nov 16, 2017 16:50:44.02 count_cache_init/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:686:1
+Nov 16, 2017 16:50:44.02 Current stack
+Nov 16, 2017 16:50:44.02 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:50:44.02 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:50:44.02 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 16:50:44.02 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 16:50:44.02 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 16:50:44.02 ]]
+Nov 16, 2017 16:50:44.03 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js 95
+Nov 16, 2017 16:50:44.03 [[Exception stack
+Nov 16, 2017 16:50:44.03 checkUserId/userIDPromise</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js:95:13
+Nov 16, 2017 16:50:44.03 Current stack
+Nov 16, 2017 16:50:44.03 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:50:44.03 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:50:44.03 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 16:50:44.03 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 16:50:44.03 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 16:50:44.03 ]]
+Nov 16, 2017 16:50:44.03 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 573
+Nov 16, 2017 16:50:44.03 [[Exception stack
+Nov 16, 2017 16:50:44.03 get_custom_filters_text/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:573:5
+Nov 16, 2017 16:50:44.03 Current stack
+Nov 16, 2017 16:50:44.03 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:50:44.03 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:50:44.03 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 16:50:44.03 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 16:50:44.03 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 16:50:44.03 ]]
+Nov 16, 2017 16:50:44.04 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/filtering/myfilters.js 568
+Nov 16, 2017 16:50:44.04 [[Exception stack
+Nov 16, 2017 16:50:44.04 MyFilters.prototype.checkFilterUpdates/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/filtering/myfilters.js:568:9
+Nov 16, 2017 16:50:44.04 Current stack
+Nov 16, 2017 16:50:44.04 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:50:44.04 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:50:44.04 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 16:50:44.04 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 16:50:44.04 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 16:50:44.04 ]]
+Nov 16, 2017 16:50:44.12 *** UTM:SVC TimerManager:registerTimer - id: telemetry_modules_ping
+Nov 16, 2017 16:50:44.12 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Nov 16, 2017 16:50:45.02 1510831245029	addons.webextension.jid1-NIfFY2CA8fy1tg@jetpack	WARN	Please specify whether you want browser_style or not in your browser_action options.
+Nov 16, 2017 16:50:45.72 Extension error: TypeError: getSettings(...) is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 834
+Nov 16, 2017 16:50:45.72 [[Exception stack
+Nov 16, 2017 16:50:45.72 processTab@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:834:22
+Nov 16, 2017 16:50:45.72 getCurrentTabInfo/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:882:7
+Nov 16, 2017 16:50:45.72 Current stack
+Nov 16, 2017 16:50:45.72 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:50:45.72 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:50:45.72 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:349:48
+Nov 16, 2017 16:50:45.72 ]]
+Nov 16, 2017 16:50:45.98 Extension error: TypeError: getSettings(...) is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 834
+Nov 16, 2017 16:50:45.98 [[Exception stack
+Nov 16, 2017 16:50:45.98 processTab@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:834:22
+Nov 16, 2017 16:50:45.98 getCurrentTabInfo/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:882:7
+Nov 16, 2017 16:50:45.98 Current stack
+Nov 16, 2017 16:50:45.98 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:50:45.98 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:50:45.98 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:349:48
+Nov 16, 2017 16:50:45.98 ]]
+Nov 16, 2017 16:50:46.09 Extension error: TypeError: getSettings(...) is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 834
+Nov 16, 2017 16:50:46.09 [[Exception stack
+Nov 16, 2017 16:50:46.09 processTab@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:834:22
+Nov 16, 2017 16:50:46.09 getCurrentTabInfo/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:882:7
+Nov 16, 2017 16:50:46.09 Current stack
+Nov 16, 2017 16:50:46.09 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:50:46.09 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:50:46.09 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:349:48
+Nov 16, 2017 16:50:46.09 ]]
+Nov 16, 2017 16:57:13.29 1510831633295	addons.webextension.jid1-NIfFY2CA8fy1tg@jetpack	WARN	Please specify whether you want browser_style or not in your browser_action options.
+Nov 16, 2017 16:57:13.96 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: recipe-client-addon-run
+Nov 16, 2017 16:57:14.01 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/settings.js 21
+Nov 16, 2017 16:57:14.01 [[Exception stack
+Nov 16, 2017 16:57:14.01 Settings/this._init</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/settings.js:21:11
+Nov 16, 2017 16:57:14.01 Current stack
+Nov 16, 2017 16:57:14.01 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:57:14.01 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:57:14.01 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 16:57:14.01 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 16:57:14.01 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 16:57:14.01 ]]
+Nov 16, 2017 16:57:14.01 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js 95
+Nov 16, 2017 16:57:14.01 [[Exception stack
+Nov 16, 2017 16:57:14.01 checkUserId/userIDPromise</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js:95:13
+Nov 16, 2017 16:57:14.01 Current stack
+Nov 16, 2017 16:57:14.01 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:57:14.01 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:57:14.01 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 16:57:14.01 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 16:57:14.01 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 16:57:14.01 ]]
+Nov 16, 2017 16:57:14.01 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js 95
+Nov 16, 2017 16:57:14.01 [[Exception stack
+Nov 16, 2017 16:57:14.01 checkUserId/userIDPromise</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js:95:13
+Nov 16, 2017 16:57:14.01 Current stack
+Nov 16, 2017 16:57:14.01 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:57:14.01 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:57:14.01 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 16:57:14.01 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 16:57:14.01 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 16:57:14.01 ]]
+Nov 16, 2017 16:57:14.01 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 686
+Nov 16, 2017 16:57:14.01 [[Exception stack
+Nov 16, 2017 16:57:14.01 count_cache_init/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:686:1
+Nov 16, 2017 16:57:14.01 Current stack
+Nov 16, 2017 16:57:14.01 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:57:14.01 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:57:14.01 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 16:57:14.01 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 16:57:14.01 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 16:57:14.01 ]]
+Nov 16, 2017 16:57:14.02 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js 95
+Nov 16, 2017 16:57:14.02 [[Exception stack
+Nov 16, 2017 16:57:14.02 checkUserId/userIDPromise</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js:95:13
+Nov 16, 2017 16:57:14.02 Current stack
+Nov 16, 2017 16:57:14.02 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:57:14.02 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:57:14.02 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 16:57:14.02 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 16:57:14.02 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 16:57:14.02 ]]
+Nov 16, 2017 16:57:14.03 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 573
+Nov 16, 2017 16:57:14.03 [[Exception stack
+Nov 16, 2017 16:57:14.03 get_custom_filters_text/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:573:5
+Nov 16, 2017 16:57:14.03 Current stack
+Nov 16, 2017 16:57:14.03 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:57:14.03 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:57:14.03 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 16:57:14.03 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 16:57:14.03 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 16:57:14.03 ]]
+Nov 16, 2017 16:57:14.03 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/filtering/myfilters.js 568
+Nov 16, 2017 16:57:14.03 [[Exception stack
+Nov 16, 2017 16:57:14.03 MyFilters.prototype.checkFilterUpdates/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/filtering/myfilters.js:568:9
+Nov 16, 2017 16:57:14.03 Current stack
+Nov 16, 2017 16:57:14.03 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:57:14.03 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:57:14.03 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 16:57:14.03 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 16:57:14.03 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 16:57:14.03 ]]
+Nov 16, 2017 16:57:14.09 *** UTM:SVC TimerManager:registerTimer - id: telemetry_modules_ping
+Nov 16, 2017 16:57:14.09 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Nov 16, 2017 16:57:14.90 1510831634906	addons.webextension.jid1-NIfFY2CA8fy1tg@jetpack	WARN	Please specify whether you want browser_style or not in your browser_action options.
+Nov 16, 2017 16:57:15.50 Extension error: TypeError: getSettings(...) is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 834
+Nov 16, 2017 16:57:15.50 [[Exception stack
+Nov 16, 2017 16:57:15.50 processTab@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:834:22
+Nov 16, 2017 16:57:15.50 getCurrentTabInfo/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:882:7
+Nov 16, 2017 16:57:15.50 Current stack
+Nov 16, 2017 16:57:15.50 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:57:15.50 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:57:15.50 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:349:48
+Nov 16, 2017 16:57:15.50 ]]
+Nov 16, 2017 16:57:15.51 Extension error: TypeError: getSettings(...) is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 834
+Nov 16, 2017 16:57:15.51 [[Exception stack
+Nov 16, 2017 16:57:15.51 processTab@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:834:22
+Nov 16, 2017 16:57:15.51 getCurrentTabInfo/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:882:7
+Nov 16, 2017 16:57:15.51 Current stack
+Nov 16, 2017 16:57:15.51 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 16:57:15.51 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 16:57:15.51 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:349:48
+Nov 16, 2017 16:57:15.51 ]]
+Nov 16, 2017 20:01:38.42 1510842698429	addons.webextension.jid1-NIfFY2CA8fy1tg@jetpack	WARN	Please specify whether you want browser_style or not in your browser_action options.
+Nov 16, 2017 20:01:39.10 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: recipe-client-addon-run
+Nov 16, 2017 20:01:39.15 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/settings.js 21
+Nov 16, 2017 20:01:39.15 [[Exception stack
+Nov 16, 2017 20:01:39.15 Settings/this._init</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/settings.js:21:11
+Nov 16, 2017 20:01:39.15 Current stack
+Nov 16, 2017 20:01:39.15 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 20:01:39.15 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 20:01:39.15 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 20:01:39.15 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 20:01:39.15 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 20:01:39.15 ]]
+Nov 16, 2017 20:01:39.15 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js 95
+Nov 16, 2017 20:01:39.15 [[Exception stack
+Nov 16, 2017 20:01:39.15 checkUserId/userIDPromise</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js:95:13
+Nov 16, 2017 20:01:39.15 Current stack
+Nov 16, 2017 20:01:39.15 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 20:01:39.15 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 20:01:39.15 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 20:01:39.15 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 20:01:39.15 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 20:01:39.15 ]]
+Nov 16, 2017 20:01:39.15 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js 95
+Nov 16, 2017 20:01:39.15 [[Exception stack
+Nov 16, 2017 20:01:39.15 checkUserId/userIDPromise</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js:95:13
+Nov 16, 2017 20:01:39.15 Current stack
+Nov 16, 2017 20:01:39.15 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 20:01:39.15 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 20:01:39.15 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 20:01:39.15 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 20:01:39.15 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 20:01:39.15 ]]
+Nov 16, 2017 20:01:39.15 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 686
+Nov 16, 2017 20:01:39.15 [[Exception stack
+Nov 16, 2017 20:01:39.15 count_cache_init/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:686:1
+Nov 16, 2017 20:01:39.15 Current stack
+Nov 16, 2017 20:01:39.15 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 20:01:39.15 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 20:01:39.15 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 20:01:39.15 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 20:01:39.15 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 20:01:39.15 ]]
+Nov 16, 2017 20:01:39.16 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js 95
+Nov 16, 2017 20:01:39.16 [[Exception stack
+Nov 16, 2017 20:01:39.16 checkUserId/userIDPromise</<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/stats.js:95:13
+Nov 16, 2017 20:01:39.16 Current stack
+Nov 16, 2017 20:01:39.16 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 20:01:39.16 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 20:01:39.16 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 20:01:39.16 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 20:01:39.16 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 20:01:39.16 ]]
+Nov 16, 2017 20:01:39.17 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 573
+Nov 16, 2017 20:01:39.17 [[Exception stack
+Nov 16, 2017 20:01:39.17 get_custom_filters_text/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:573:5
+Nov 16, 2017 20:01:39.17 Current stack
+Nov 16, 2017 20:01:39.17 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 20:01:39.17 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 20:01:39.17 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 20:01:39.17 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 20:01:39.17 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 20:01:39.17 ]]
+Nov 16, 2017 20:01:39.17 Extension error: TypeError: response is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/filtering/myfilters.js 568
+Nov 16, 2017 20:01:39.17 [[Exception stack
+Nov 16, 2017 20:01:39.17 MyFilters.prototype.checkFilterUpdates/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/filtering/myfilters.js:568:9
+Nov 16, 2017 20:01:39.17 Current stack
+Nov 16, 2017 20:01:39.17 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 20:01:39.17 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 20:01:39.17 wrapPromise/</<@resource://gre/modules/ExtensionCommon.jsm:363:15
+Nov 16, 2017 20:01:39.17 withLastError@resource://gre/modules/ExtensionCommon.jsm:301:14
+Nov 16, 2017 20:01:39.17 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:357:11
+Nov 16, 2017 20:01:39.17 ]]
+Nov 16, 2017 20:01:39.23 *** UTM:SVC TimerManager:registerTimer - id: telemetry_modules_ping
+Nov 16, 2017 20:01:39.23 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Nov 16, 2017 20:01:40.04 1510842700045	addons.webextension.jid1-NIfFY2CA8fy1tg@jetpack	WARN	Please specify whether you want browser_style or not in your browser_action options.
+Nov 16, 2017 20:01:40.81 Extension error: TypeError: getSettings(...) is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 834
+Nov 16, 2017 20:01:40.81 [[Exception stack
+Nov 16, 2017 20:01:40.81 processTab@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:834:22
+Nov 16, 2017 20:01:40.81 getCurrentTabInfo/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:882:7
+Nov 16, 2017 20:01:40.81 Current stack
+Nov 16, 2017 20:01:40.81 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 20:01:40.82 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 20:01:40.82 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:349:48
+Nov 16, 2017 20:01:40.82 ]]
+Nov 16, 2017 20:01:40.84 Extension error: TypeError: getSettings(...) is undefined moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js 834
+Nov 16, 2017 20:01:40.84 [[Exception stack
+Nov 16, 2017 20:01:40.84 processTab@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:834:22
+Nov 16, 2017 20:01:40.84 getCurrentTabInfo/<@moz-extension://0f189686-e733-44f8-9a30-91638bbf6729/background.js:882:7
+Nov 16, 2017 20:01:40.84 Current stack
+Nov 16, 2017 20:01:40.84 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:63:129
+Nov 16, 2017 20:01:40.84 runSafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:174:38
+Nov 16, 2017 20:01:40.84 wrapPromise/<@resource://gre/modules/ExtensionCommon.jsm:349:48
+Nov 16, 2017 20:01:40.84 ]]
+Nov 16, 2017 20:04:02.58 Promise resolved after context unloaded
+Nov 16, 2017 20:09:57.28 Promise resolved after context unloaded
+Nov 16, 2017 20:13:49.16 Promise resolved after context unloaded
+Nov 16, 2017 20:14:04.56 Promise resolved after context unloaded
+Nov 16, 2017 20:14:21.99 Promise resolved while context is inactive
+Nov 16, 2017 20:14:38.61 Promise resolved after context unloaded
+Nov 16, 2017 20:15:15.42 Promise resolved while context is inactive
+Nov 16, 2017 20:15:22.57 Promise resolved while context is inactive
+Nov 16, 2017 20:15:23.72 Promise resolved after context unloaded
+
+Nov 16, 2017 21:13:48.52 NEW SESSION
+Nov 16, 2017 21:13:48.52 [5809:5846:1116/211348.524498:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 21:13:48.52 Created new window in existing browser session.
+Nov 16, 2017 21:25:03.13 [6232:6269:1116/212503.135645:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 21:25:03.17 Created new window in existing browser session.
+Nov 16, 2017 21:26:57.88 [6370:6408:1116/212657.885678:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 21:26:57.95 Created new window in existing browser session.
+Nov 16, 2017 21:32:44.33 [6649:6686:1116/213244.336616:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 21:32:44.43 Created new window in existing browser session.
+Nov 16, 2017 21:35:48.51 [6889:6926:1116/213548.511359:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 21:35:48.56 Created new window in existing browser session.
+Nov 16, 2017 21:47:16.84 [7490:7527:1116/214716.849225:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 21:47:16.89 Created new window in existing browser session.
+Nov 16, 2017 21:50:41.27 [7788:7825:1116/215041.278581:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 21:50:41.29 Created new window in existing browser session.
+Nov 16, 2017 21:54:13.57 [8018:8055:1116/215413.573384:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 21:54:13.59 Created new window in existing browser session.
+Nov 16, 2017 22:00:29.46 [8487:8524:1116/220029.460500:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 22:00:29.53 Created new window in existing browser session.
+Nov 16, 2017 22:03:12.04 [8772:8809:1116/220312.047810:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 22:03:12.10 Created new window in existing browser session.
+Nov 16, 2017 22:15:58.21 [9295:9332:1116/221558.215935:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 22:15:58.24 Created new window in existing browser session.
+Nov 16, 2017 22:17:48.07 [9581:9618:1116/221748.075031:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 22:17:48.11 Created new window in existing browser session.
+Nov 16, 2017 22:20:56.98 [9880:9917:1116/222056.988638:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 22:20:57.04 Created new window in existing browser session.
+Nov 16, 2017 22:24:40.89 [10145:10182:1116/222440.896445:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 22:24:40.97 Created new window in existing browser session.
+Nov 16, 2017 22:24:59.09 [10246:10283:1116/222459.098489:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 22:24:59.10 Created new window in existing browser session.
+Nov 16, 2017 22:26:59.26 [10519:10556:1116/222659.264904:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 16, 2017 22:26:59.30 Created new window in existing browser session.
+
+Nov 17, 2017 09:50:12.97 NEW SESSION
+Nov 17, 2017 09:50:12.97 [4293:4331:1117/095012.972709:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 17, 2017 09:50:13.10 Created new window in existing browser session.
+Nov 17, 2017 09:54:43.89 [4637:4677:1117/095443.890140:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 17, 2017 09:54:43.91 Created new window in existing browser session.
+Nov 17, 2017 10:05:14.87 [5288:5325:1117/100514.877813:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 17, 2017 10:05:14.93 Created new window in existing browser session.
+Nov 17, 2017 10:07:05.68 [5576:5613:1117/100705.686044:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 17, 2017 10:07:05.71 Created new window in existing browser session.
+Nov 17, 2017 10:08:37.45 [5822:5859:1117/100837.459297:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 17, 2017 10:08:37.50 Created new window in existing browser session.
+Nov 17, 2017 10:11:55.40 [6123:6160:1117/101155.405566:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 17, 2017 10:11:55.42 Created new window in existing browser session.
+Nov 17, 2017 10:15:38.31 [6503:6540:1117/101538.313699:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 17, 2017 10:15:38.38 Created new window in existing browser session.
+
+Nov 17, 2017 10:19:07.53 NEW SESSION
+Nov 17, 2017 10:19:07.53 [7015:7058:1117/101907.538292:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 17, 2017 10:19:07.71 Created new window in existing browser session.
+Nov 17, 2017 10:22:45.12 [7352:7389:1117/102245.126079:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 17, 2017 10:22:45.16 Created new window in existing browser session.
+Nov 17, 2017 10:24:03.35 [7583:7620:1117/102403.354069:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 17, 2017 10:24:03.39 Created new window in existing browser session.
+Nov 17, 2017 10:26:13.96 [7799:7836:1117/102613.960746:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Nov 17, 2017 10:26:14.16 Created new window in existing browser session.

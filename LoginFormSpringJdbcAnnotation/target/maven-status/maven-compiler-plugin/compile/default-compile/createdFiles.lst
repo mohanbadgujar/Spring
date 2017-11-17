@@ -1,6 +1,12 @@
 com/bridgelabz/model/User.class
 com/bridgelabz/model/Login.class
-com/bridgelabz/controller/LoginController.class
+com/bridgelabz/controller/LogoutController.class
 com/bridgelabz/service/business/UserService.class
+com/bridgelabz/filter/LoggerFilter.class
+com/bridgelabz/controller/WelcomeController.class
+com/bridgelabz/controller/LoginController.class
+com/bridgelabz/service/utility/SendEmail.class
+com/bridgelabz/dao/UserDaoImpl.class
 com/bridgelabz/validator/UserValidation.class
 com/bridgelabz/controller/RegistrationController.class
+com/bridgelabz/dao/UserDao.class

@@ -8,4 +8,7 @@ public interface UserDao {
 
 	public boolean authenticateUser(User user);
 
+	public boolean checkUserAlredyExits(String email);
+
+	public boolean resetPassword(User user);
 }

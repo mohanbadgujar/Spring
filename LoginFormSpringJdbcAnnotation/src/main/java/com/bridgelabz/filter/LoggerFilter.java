@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/*@WebFilter("/LoggerFilter")*/
 public class LoggerFilter implements Filter {
 
 	FilterConfig filterConfig = null;
@@ -19,7 +18,7 @@ public class LoggerFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 
-		System.out.println("Login Filter Called");
+		System.out.println("Filter Called");
 
 		HttpServletRequest req = (HttpServletRequest) request;
 		HttpServletResponse res = (HttpServletResponse) response;

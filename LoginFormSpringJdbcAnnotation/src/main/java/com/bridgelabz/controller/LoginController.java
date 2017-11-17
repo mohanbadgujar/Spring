@@ -20,15 +20,6 @@ public class LoginController {
 	@Autowired
 	private UserService service;
 
-	@RequestMapping(value = "welcome")
-	public ModelAndView showWelcome(HttpServletRequest request, HttpServletResponse response) {
-
-		ModelAndView mav = new ModelAndView("welcome");
-		// mav.addObject("login", new Login());
-
-		return mav;
-	}
-
 	@RequestMapping(value = "login")
 	public ModelAndView showLogin(HttpServletRequest request, HttpServletResponse response) {
 
@@ -44,6 +35,9 @@ public class LoginController {
 
 		ModelAndView mav = null;
 
+		
+	/*	User user =  service.getCurrentUserData()
+		*/
 		Boolean userValide = service.authUser(login);
 
 		if (!userValide) {

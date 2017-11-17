@@ -11,22 +11,14 @@
     http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
 	<context:component-scan base-package="com.bridgelabz"></context:component-scan>
-	<!-- <context:property-placeholder location="classpath:/email.properties"/> 
-		<context:property-placeholder location="classpath:/database.properties" /> -->
+
 	<context:property-placeholder
 		location="classpath:/email.properties,
           classpath:/database.properties"
 		ignore-unresolvable="true" />
 
-
 	<mvc:annotation-driven></mvc:annotation-driven>
 	<mvc:resources mapping="/resources/**" location="/resources/" />
-
-	<bean id="viewResolver"
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/jsp/" />
-		<property name="suffix" value=".jsp" />
-	</bean>
 
 	<bean id="messageSource"
 		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
@@ -36,9 +28,6 @@
 			</list>
 		</property>
 	</bean>
-
-
-
 
 	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
 		<property name="host" value="${email.host}" />
@@ -62,12 +51,21 @@
 		<property name="password" value="${jdbc.password}" />
 	</bean>
 
-	<bean id="sendMail" class="com.bridgelabz.service.utility.SendEmail" />
+	<!-- <bean id="sendMail" class="com.bridgelabz.service.utility.SendEmail" /> -->
+	<bean id="sendMail" class="com.bridgelabz.service.utility.SendEmail">
+         	<property name="mailSender" ref="mailSender"></property>
+    </bean>
+         
 	<bean id="service" class="com.bridgelabz.service.business.UserService" />
+	
 	<bean id="dao" class="com.bridgelabz.dao.UserDaoImpl">
 		<property name="dataSource" ref="dataSource"></property>
 	</bean>
 
-
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
 
 </beans>

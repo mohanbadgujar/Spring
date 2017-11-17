@@ -13,7 +13,7 @@
 <br>
 <table>
 		<tr>
-			<td>Welcome ${fullName}</td>
+			<td>Welcome ${name}</td>
 		</tr>
 		<tr>
 		</tr>

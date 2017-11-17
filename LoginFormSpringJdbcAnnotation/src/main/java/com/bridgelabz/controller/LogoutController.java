@@ -23,7 +23,5 @@ public class LogoutController {
 		ModelAndView mv = new ModelAndView("login");
 		mv.addObject("login", new User());
 		return mv;
-		
 	}
-
 }

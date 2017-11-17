@@ -7,9 +7,13 @@
 <title>welcome</title>
 </head>
 <body>
-	<table>
+
+
+<form method="get" action="logout">	
+<br>
+<table>
 		<tr>
-			<td>Welcome ${fullName}</td>
+			<td>Welcome ${name}</td>
 		</tr>
 		<tr>
 		</tr>
@@ -19,5 +23,12 @@
 			<td><a href="home.jsp">Home</a></td>
 		</tr>
 	</table>
+					
+<input type="submit" name="logout" value="LogOut">		
+				
+</form> 
+
+
+	
 </body>
 </html>
