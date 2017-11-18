@@ -35,12 +35,13 @@ public class LoginController {
 
 		ModelAndView mav = null;
 
-		
-	/*	User user =  service.getCurrentUserData()
-		*/
+		/*
+		 * User user = service.getCurrentUserData()
+		 */
 		Boolean userValide = service.authUser(login);
 
 		if (!userValide) {
+			
 			mav = new ModelAndView("login");
 			mav.addObject("message", "Username or Password is wrong!!");
 

@@ -20,8 +20,9 @@ public class RegistrationController {
 	@Autowired
 	UserService service;
 
-	/*@Autowired
-	SendEmail sendMail;*/
+	/*
+	 * @Autowired SendEmail sendMail;
+	 */
 
 	@RequestMapping(value = "register")
 	public ModelAndView showRegister() {
@@ -29,7 +30,7 @@ public class RegistrationController {
 		ModelAndView mv = new ModelAndView("register");
 		mv.addObject("user", new User());
 		return mv;
-		
+
 	}
 
 	@RequestMapping(value = "/regProcess", method = RequestMethod.POST)
@@ -38,16 +39,14 @@ public class RegistrationController {
 		StrongPasswordEncryptor passwordEncryptor = new StrongPasswordEncryptor();
 		UserValidation validation = new UserValidation();
 		validation.validate(user, result);
-		
 
 		if (!result.hasErrors()) {
 
 			// Encrypt and set password using Java Simplified Encryption
 			String encryptedPassword = passwordEncryptor.encryptPassword(user.getPassword());
 			user.setPassword(encryptedPassword);
-			
+
 			Boolean res = service.saveuser(user);
-		
 
 			if (!res) {
 				mav = new ModelAndView("register");
@@ -55,9 +54,11 @@ public class RegistrationController {
 				return mav;
 			}
 
-		/*	String staus = sendMail.sendEmail(user);
-*/
-		/*	System.out.println("status" + staus);*/
+			/*
+			 * String staus = sendMail.sendEmail(user);
+			 */
+			/* System.out.println("status" + staus); */
+
 			return new ModelAndView("login", "login", new Login());
 
 		}
