@@ -5,12 +5,17 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.bridgelabz.model.Login;
 import com.bridgelabz.model.User;
 import com.bridgelabz.service.business.UserService;
 
@@ -20,7 +25,7 @@ public class LoginController {
 	@Autowired
 	private UserService service;
 
-	@RequestMapping(value = "login")
+	@RequestMapping(value = "/login")
 	public ModelAndView showLogin(HttpServletRequest request, HttpServletResponse response) {
 
 		ModelAndView mav = new ModelAndView("login");
@@ -29,20 +34,17 @@ public class LoginController {
 		return mav;
 	}
 
-	@RequestMapping(value = "/loginProcess", method = RequestMethod.POST)
-	public ModelAndView loginProcess(@ModelAttribute("login") User login, HttpServletRequest request,
+	/*@RequestMapping(value = "/loginProcess", method = RequestMethod.POST)
+	public ModelAndView loginProcess(@ModelAttribute("login") User user, HttpServletRequest request,
 			HttpServletResponse response) {
 
 		ModelAndView mav = null;
 
-		/*
-		 * User user = service.getCurrentUserData()
-		 */
-		Boolean userValide = service.authUser(login);
+		Boolean userValide = service.authUser(user);
 
 		if (!userValide) {
-			
-			mav = new ModelAndView("login");
+
+			mav = new ModelAndView("/login");
 			mav.addObject("message", "Username or Password is wrong!!");
 
 			return mav;
@@ -50,12 +52,33 @@ public class LoginController {
 
 		HttpSession session = request.getSession();
 
-		session.setAttribute("name", login.getEmail());
+		session.setAttribute("name", user.getEmail());
 
-		mav = new ModelAndView("welcome");
-		mav.addObject("fullName", login.getEmail());
+		mav = new ModelAndView("redirect:/welcome");
 
 		return mav;
+
+	}*/
+	
+	@ResponseBody
+	@RequestMapping(value = "/loginProcess", method = RequestMethod.POST)
+	public ResponseEntity<String> loginProcess(@RequestBody Login user, HttpServletRequest request,
+			HttpServletResponse response) {
+
+		Boolean userValide = service.authUser(user);
+
+		if (!userValide) {
+
+			String res_msg = "User name and password wrong";
+			
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(res_msg);
+		}
+
+		HttpSession session = request.getSession();
+
+		session.setAttribute("name", user.getEmail());
+
+		return ResponseEntity.ok("success");
 
 	}
 }

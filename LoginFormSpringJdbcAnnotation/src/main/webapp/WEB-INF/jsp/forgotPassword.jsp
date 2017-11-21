@@ -11,7 +11,6 @@ Enter your registered email address:
 	<form action="resetPassword" method="post">
 		<table>
 			<tr>
-
 				<td colspan="2"><input type="text" name="email"> </td>
 			</tr>
 			

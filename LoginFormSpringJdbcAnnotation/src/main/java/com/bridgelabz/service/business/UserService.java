@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.bridgelabz.dao.UserDao;
-import com.bridgelabz.dao.UserDaoImpl;
+import com.bridgelabz.model.Login;
 import com.bridgelabz.model.User;
 
 @Service
@@ -13,8 +13,8 @@ public class UserService {
 	@Autowired
 	UserDao dao;
 
-	public boolean authUser(User user) {
-		
+	public boolean authUser(Login user) {
+
 		return dao.authenticateUser(user);
 	}
 
@@ -24,22 +24,14 @@ public class UserService {
 
 	}
 
-	
-	 public String findByUserEmail(String email) { 
-		 
-//		 UserDao dao = new UserDaoImpl();
-		 
-//		 String value = dao.checkUserAlredyExits(email);
-		 boolean value = dao.checkUserAlredyExits(email);
-		 System.out.println("value"+value);
-		 
-		 return ""; 
+	public boolean checkUserAlreadyExits(String email) {
+
+		return dao.checkUserAlredyExits(email);
 	}
 
 	public Boolean resetPassword(User user) {
-		
+
 		return dao.resetPassword(user);
 	}
-	 
 
 }

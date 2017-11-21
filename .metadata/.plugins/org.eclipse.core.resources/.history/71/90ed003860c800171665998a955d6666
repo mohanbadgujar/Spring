@@ -1,9 +1,0 @@
-package com.bridgelabz.dao;
-
-import com.bridgelabz.model.User;
-
-public interface UserDao {
-
-	public void register(User user);
-	public void login(User user);
-}

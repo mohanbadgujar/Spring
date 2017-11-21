@@ -44,6 +44,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/bridgeit/Desktop/Spring/CrudRest"/>
+			<item value="/home/bridgeit/Desktop/Spring/CRUD/src/main/java/com/brigelabz/HelloController.java"/>
 			<item value="/home/bridgeit/Desktop/Spring"/>
 			<item value="/home/bridgeit/Desktop/Spring/HelloWorld"/>
 		</list>
@@ -58,16 +60,23 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.bridgelabz.AnnotationExample"/>
-			<item value="com.bridgelabz.HelloWorldWithAnnotation"/>
-			<item value="com.bridgelabz"/>
+			<item value="com.bridgelabz.CrudRestHiberOperation"/>
+			<item value="com.bridgelabz.CrudRestHibernate"/>
+			<item value="com.bridgelabz.CrudRest"/>
+			<item value="com.bridgelabz.CRUD"/>
+			<item value="com.bridgelabz.CrudOperation"/>
+			<item value="com.bridgelabz.Crud"/>
 		</list>
 		<list key="groupId">
 			<item value="com.bridgelabz"/>
 		</list>
 		<list key="artifactId">
-			<item value="AnnotationExample"/>
-			<item value="HelloWorldWithAnnotation"/>
+			<item value="CrudRestHiberOperation"/>
+			<item value="CrudRestHibernate"/>
+			<item value="CrudRest"/>
+			<item value="CRUD"/>
+			<item value="CrudOperation"/>
+			<item value="Crud"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
