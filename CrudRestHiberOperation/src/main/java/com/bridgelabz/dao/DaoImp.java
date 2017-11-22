@@ -6,6 +6,7 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.bridgelabz.model.User;
@@ -33,18 +34,19 @@ public class DaoImp implements Dao {
 		return user;
 	}
 
-	/*
-	 * @Override public User findByName(String name) {
-	 * 
-	 * Session session = factory.openSession();
-	 * 
-	 * @SuppressWarnings("deprecation") Criteria criteria =
-	 * session.createCriteria(User.class); criteria.add(Restrictions.eq("name",
-	 * name));
-	 * 
-	 * @SuppressWarnings("unchecked") List<User> user = (List<User>)criteria.list();
-	 * return user.get(0); }
-	 */
+	@Override
+	public User findByName(String name) {
+
+		Session session = factory.openSession();
+
+		@SuppressWarnings("deprecation")
+		Criteria criteria = session.createCriteria(User.class);
+		criteria.add(Restrictions.eq("name", name));
+
+		@SuppressWarnings("unchecked")
+		List<User> user = (List<User>) criteria.list();
+		return user.get(0);
+	}
 
 	@Override
 	public void SaveUser(User user) {

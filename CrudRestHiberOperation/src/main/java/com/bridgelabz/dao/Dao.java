@@ -10,7 +10,7 @@ public interface Dao {
 
 	void SaveUser(User user);
 
-	/* User findByName(String user); */
+	User findByName(String user); 
 
 	void updateUser(User user);
 

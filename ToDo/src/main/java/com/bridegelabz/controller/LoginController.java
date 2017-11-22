@@ -20,7 +20,7 @@ public class LoginController {
 
 	@Autowired
 	UserServices userService;
-	
+
 	@RequestMapping(value = "/loginProcess", method = RequestMethod.POST)
 	public ResponseEntity<String> loginProcess(@RequestBody Login user, HttpServletRequest request,
 			HttpServletResponse response) {
@@ -29,9 +29,7 @@ public class LoginController {
 
 		if (!userValide) {
 
-			String res_msg = "User name and password wrong";
-			
-			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(res_msg);
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("User name and password wrong");
 		}
 
 		HttpSession session = request.getSession();

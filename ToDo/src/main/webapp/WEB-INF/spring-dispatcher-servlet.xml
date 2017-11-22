@@ -26,8 +26,7 @@
 
 	</bean>
 
-	<bean id="sessionFactory"
-		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 
 		<property name="annotatedClasses">
@@ -45,8 +44,10 @@
 		</property>
 	</bean>
 
-	<bean id="userDao" class="com.bridgelabz.dao.DaoImp" />
+	<bean id="userDao" class="com.bridegelabz.dao.UserDaoImpl" />
 
-	<bean id="userService" class="com.bridgelabz.service.UserService" />
+	<bean id="userService" class="com.bridegelabz.services.UserServices" />
+	 
+	<bean id="userValidation" class="com.bridgelabz.validator.UserValidation" />
 
 </beans>

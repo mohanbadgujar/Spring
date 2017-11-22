@@ -34,13 +34,15 @@ public class RestController {
 		}
 	}
 
-	/*
-	 * @RequestMapping(value = "/user/name/{name}", method = RequestMethod.GET)
-	 * public ResponseEntity<User> findByName(@PathVariable("name") String name) {
-	 * User user = userService.findByName(name); if (user == null) { return new
-	 * ResponseEntity<User>(HttpStatus.NO_CONTENT); } else { return new
-	 * ResponseEntity<User>(user, HttpStatus.OK); } }
-	 */
+	@RequestMapping(value = "/user/name/{name}", method = RequestMethod.GET)
+	public ResponseEntity<User> findByName(@PathVariable("name") String name) {
+		User user = userService.findByName(name);
+		if (user == null) {
+			return new ResponseEntity<User>(HttpStatus.NO_CONTENT);
+		} else {
+			return new ResponseEntity<User>(user, HttpStatus.OK);
+		}
+	}
 
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public ResponseEntity<Void> saveUser(@RequestBody User user) {

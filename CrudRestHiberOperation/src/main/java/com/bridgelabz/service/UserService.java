@@ -17,11 +17,11 @@ public class UserService {
 	public void saveUser(User user) {
 		userDao.SaveUser(user);
 	}
-
-	/*
-	 * public User findByName(String name) { return userDao.findByName(name); }
-	 */
-
+	
+	public User findByName(String name) { 
+		return userDao.findByName(name);
+	}
+	 
 	public void updateUser(User user) {
 		userDao.updateUser(user);
 	}

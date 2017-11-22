@@ -8,9 +8,9 @@
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1511015986637_6" label="Rest Api" name="Rest Api">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SpringmvcRestService" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/CRUD" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/CrudRestHiberOperation" type="4"/>
+<item elementID="=CrudRestHiberOperation" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/RestControllerDemo1" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ToDo" type="4"/>
+<item elementID="=ToDo" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1509777881963_0" label="Window Working Set" name="Aggregate for window 1509777881963"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1509883756683_1" label="Window Working Set" name="Aggregate for window 1509883756683"/>

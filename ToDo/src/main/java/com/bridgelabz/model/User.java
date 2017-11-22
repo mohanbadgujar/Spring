@@ -1,5 +1,6 @@
 package com.bridgelabz.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,12 +17,18 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.AUTO, generator = "gen")
 	@GenericGenerator(name = "gen", strategy = "native")
 	private int id;
-
-	private String name;
-
-	private int age;
-
-	private double salary;
+	
+	@Column
+	private String fullName;
+	
+	@Column
+	private String email;
+	
+	@Column
+	private String password;
+	
+	@Column
+	private String mobile;
 
 	public int getId() {
 		return id;
@@ -31,28 +38,36 @@ public class User {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getFullName() {
+		return fullName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
 
-	public int getAge() {
-		return age;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setAge(int age) {
-		this.age = age;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
-	public double getSalary() {
-		return salary;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setSalary(double salary) {
-		this.salary = salary;
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
 	}
 
 }
