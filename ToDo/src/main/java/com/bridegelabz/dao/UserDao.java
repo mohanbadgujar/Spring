@@ -1,14 +1,22 @@
 package com.bridegelabz.dao;
 
+import org.hibernate.HibernateException;
+
 import com.bridgelabz.model.Login;
 import com.bridgelabz.model.User;
 
 public interface UserDao {
 
-	Boolean authUser(Login user);
+	Boolean saveUser(User user) throws HibernateException;
 
-	Boolean saveUser(User user);
+	/*boolean authenticateUser(User user);*/
 
-	boolean checkUserAlreadyExits(String email);
+	User getUserByEmailId(String email);
+
+	User getUserById(int id);
+
+	boolean updateUser(User user);
+
+	/*User checkUserAlreadyExits(String email);*/
 
 }

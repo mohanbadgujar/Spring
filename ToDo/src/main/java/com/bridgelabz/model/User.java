@@ -1,16 +1,23 @@
 package com.bridgelabz.model;
 
-import javax.persistence.Column;
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.GenericGenerator;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table
+@DynamicUpdate(value = true)
 public class User {
 
 	@Id
@@ -18,17 +25,19 @@ public class User {
 	@GenericGenerator(name = "gen", strategy = "native")
 	private int id;
 	
-	@Column
 	private String fullName;
 	
-	@Column
 	private String email;
 	
-	@Column
 	private String password;
-	
-	@Column
+
 	private String mobile;
+
+	private boolean active;
+	
+	@JsonIgnore
+	@OneToMany(mappedBy = "user")
+	private Set<Note> notes = new HashSet<>();
 
 	public int getId() {
 		return id;
@@ -70,4 +79,19 @@ public class User {
 		this.mobile = mobile;
 	}
 
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
+	}
+
+	public Set<Note> getNotes() {
+		return notes;
+	}
+
+	public void setNotes(Set<Note> notes) {
+		this.notes = notes;
+	}
 }

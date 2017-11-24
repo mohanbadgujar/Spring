@@ -13,7 +13,7 @@ import com.bridgelabz.model.User;
 public class UserValidation implements Validator {
 
 	@Autowired
-	UserServices userservice;
+	UserServices userService;
 
 	public boolean supports(Class<?> clazz) {
 		return false;
@@ -33,7 +33,9 @@ public class UserValidation implements Validator {
 			errors.rejectValue("fullName", "Size.regForm.fullName");
 		}
 
-		if (userservice.checkUserAlreadyExits(user.getEmail())) {
+		if (userService.getUserByEmailId(user.getEmail()) != null) {
+			
+			System.out.println("User already exites with this emaill");
 			errors.rejectValue("email", "Duplicate.regForm.email");
 		}
 
