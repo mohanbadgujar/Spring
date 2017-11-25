@@ -35,6 +35,8 @@ public class User {
 
 	private boolean active;
 	
+	private String image;
+	
 	@JsonIgnore
 	@OneToMany(mappedBy = "user")
 	private Set<Note> notes = new HashSet<>();
@@ -93,5 +95,13 @@ public class User {
 
 	public void setNotes(Set<Note> notes) {
 		this.notes = notes;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
 	}
 }

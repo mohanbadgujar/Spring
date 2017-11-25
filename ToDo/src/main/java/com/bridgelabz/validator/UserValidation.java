@@ -7,8 +7,8 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
-import com.bridegelabz.services.UserServices;
 import com.bridgelabz.model.User;
+import com.bridgelabz.services.UserServices;
 
 public class UserValidation implements Validator {
 
