@@ -15,4 +15,6 @@ public interface NoteDao {
 
 	Set<Note> getNotes(int userId);
 
+	void archive(Note note);
+
 }

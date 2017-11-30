@@ -30,11 +30,11 @@ public class User {
 	private String email;
 	
 	private String password;
-
+	
 	private String mobile;
 
 	private boolean active;
-	
+
 	private String image;
 	
 	@JsonIgnore
@@ -103,5 +103,5 @@ public class User {
 
 	public void setImage(String image) {
 		this.image = image;
-	}
+	}	
 }

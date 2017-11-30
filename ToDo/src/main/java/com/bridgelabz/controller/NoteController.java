@@ -86,4 +86,25 @@ public class NoteController {
 			return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(null);
 		}
 	}
+	
+	@RequestMapping(value = "/archive/{id}", method = RequestMethod.DELETE)
+	public ResponseEntity<Response> archive(@PathVariable("id") int id,
+			@RequestAttribute("loggedInUser") User user) {
+		
+		try {
+
+			noteService.archive(id);
+			response.setStatus(1);
+			response.setMsg("Note archived");
+			return new ResponseEntity<Response>(response, HttpStatus.OK);
+
+		} catch (Exception e) {
+
+			e.printStackTrace();
+			response.setStatus(-1);
+			response.setMsg("Note could not be archive");
+			return new ResponseEntity<Response>(response, HttpStatus.CONFLICT);
+
+		}
+	}
 }

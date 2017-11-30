@@ -48,4 +48,10 @@ public class NoteDaoImpl implements NoteDao {
 		session.close();
 		return notes;
 	}
+
+	@Override
+	public void archive(Note note) {
+		Session session = sessionFactory.getCurrentSession();
+		session.update(note);
+	}
 }

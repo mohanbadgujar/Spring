@@ -84,8 +84,8 @@ public class FbLoginController {
 
 				String accessToken = TokenGenerator.generate(user.getId());
 				System.out.println("token geneted by jwt" + accessToken);
-				// session.setAttribute("AccessToken", accessToken);
-				response.sendRedirect("http://localhost:8080/ToDo/home");
+				session.setAttribute("AccessToken", accessToken);
+				response.sendRedirect("http://localhost:8080/ToDo/#!/dummyPage");
 			}
 
 		} catch (IOException e) {

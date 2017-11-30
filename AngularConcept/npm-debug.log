@@ -1,0 +1,61 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 verbose config Skipping project config: /home/bridgeit/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly install normalizeTree
+9 silly loadCurrentTree Finishing
+10 silly loadIdealTree Starting
+11 silly install loadIdealTree
+12 silly cloneCurrentTree Starting
+13 silly install cloneCurrentTreeToIdealTree
+14 silly cloneCurrentTree Finishing
+15 silly loadShrinkwrap Starting
+16 silly install loadShrinkwrap
+17 silly loadShrinkwrap Finishing
+18 silly loadAllDepsIntoIdealTree Starting
+19 silly install loadAllDepsIntoIdealTree
+20 silly loadAllDepsIntoIdealTree Finishing
+21 silly idealTree:prePrune bridgeit
+21 silly idealTree:prePrune `-- bower@1.8.0
+22 silly loadIdealTree Finishing
+23 silly currentTree bridgeit
+23 silly currentTree `-- bower@1.8.0
+24 silly idealTree bridgeit
+24 silly idealTree `-- bower@1.8.0
+25 silly generateActionsToTake Starting
+26 silly install generateActionsToTake
+27 warn checkPermissions Missing write access to /home/bridgeit/node_modules
+28 silly rollbackFailedOptional Starting
+29 silly rollbackFailedOptional Finishing
+30 silly runTopLevelLifecycles Starting
+31 silly runTopLevelLifecycles Finishing
+32 silly install printInstalled
+33 warn enoent ENOENT: no such file or directory, open '/home/bridgeit/package.json'
+34 warn bridgeit No description
+35 warn bridgeit No repository field.
+36 warn bridgeit No README data
+37 warn bridgeit No license field.
+38 verbose stack Error: EACCES: permission denied, access '/home/bridgeit/node_modules'
+38 verbose stack     at Error (native)
+39 verbose cwd /home/bridgeit/Desktop/Spring/AngularConcept
+40 error Linux 4.4.0-101-generic
+41 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install"
+42 error node v4.2.6
+43 error npm  v3.5.2
+44 error path /home/bridgeit/node_modules
+45 error code EACCES
+46 error errno -13
+47 error syscall access
+48 error Error: EACCES: permission denied, access '/home/bridgeit/node_modules'
+48 error     at Error (native)
+48 error  { [Error: EACCES: permission denied, access '/home/bridgeit/node_modules']
+48 error   errno: -13,
+48 error   code: 'EACCES',
+48 error   syscall: 'access',
+48 error   path: '/home/bridgeit/node_modules' }
+49 error Please try running this command again as root/Administrator.
+50 verbose exit [ -13, true ]

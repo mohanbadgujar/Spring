@@ -35,6 +35,8 @@ public class UserController {
 
 	@Autowired
 	private SendEmail sendMail;
+	
+	Response resp = new Response();
 
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
 	public ResponseEntity<Response> registration(@RequestBody User user, BindingResult result,
@@ -71,28 +73,29 @@ public class UserController {
 		return new ResponseEntity<Response>(err, HttpStatus.NOT_ACCEPTABLE);
 
 	}
-
+	
+	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public ResponseEntity<Response> login(@RequestBody Login login, HttpServletRequest request,
 			HttpServletResponse response) {
-		Response resp = new Response();
+		
 		String jwtToken = userService.authenticateUser(login.getEmail(), login.getPassword());
-
+		
 		if (jwtToken == null) {
 			resp.setStatus(-1);
 			resp.setMsg("invalid user credential, user not present");
 			return new ResponseEntity<Response>(resp, HttpStatus.NOT_ACCEPTABLE);
 		}
 
+		System.out.println("token is ="+jwtToken);
 		HttpHeaders headers = new HttpHeaders();
 		headers.add("jwt", jwtToken);
 
 		resp.setStatus(1);
-		resp.setMsg("User is Authorized");
-		ResponseEntity<Response> entity = new ResponseEntity<Response>(resp, headers, HttpStatus.OK);
+		resp.setMsg(jwtToken);
+		ResponseEntity<Response> entity = new ResponseEntity<Response>(resp, HttpStatus.OK);
 
 		return entity;
-
 	}
 
 	@RequestMapping(value = "/activate/{token:.+}")
@@ -119,19 +122,28 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "/forgotPassword", method = RequestMethod.POST)
-	public ResponseEntity<String> forgotProcess(@RequestBody User user, HttpServletRequest request,
+	public ResponseEntity<Response> forgotProcess(@RequestBody User user, HttpServletRequest request,
 			HttpServletResponse response) {
 
+		System.out.println("In forgot Password Api");
+		
+		
 		User updatedUser = userService.getUserByEmailId(user.getEmail());
 
-		if (updatedUser == null)
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Enter a valid Email");
-
+		if (updatedUser == null){
+			resp.setStatus(-1);
+			resp.setMsg("Enter a valid Email");
+			return new ResponseEntity<Response>(resp, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+		
 		String accessToken = TokenGenerator.generate(updatedUser.getId());
 
 		sendMail.sendForgotMail(user.getEmail(), accessToken);
 
-		return ResponseEntity.ok("success");
+		resp.setStatus(1);
+		resp.setMsg(accessToken);
+		ResponseEntity<Response> entity = new ResponseEntity<Response>(resp, HttpStatus.OK);
+		return entity;
 	}
 
 	@RequestMapping(value = "/resetPassword/{token:.+}", method = RequestMethod.POST)
@@ -155,6 +167,8 @@ public class UserController {
 	@RequestMapping(value = "/home")
 	public ResponseEntity<String> home() {
 
+		System.out.println("In home page");
+		
 		try {
 
 			return ResponseEntity.ok("success");

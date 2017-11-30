@@ -14,6 +14,8 @@ public class NoteService {
 	
 	@Autowired
 	private NoteDao noteDao;
+	
+	Date modified = new Date();
 
 	@Transactional
 	public void createNote(Note note, User user) {
@@ -31,8 +33,7 @@ public class NoteService {
 		Note oldNote = noteDao.getNoteById(note.getNoteId());
 		
 		if (user.getId() == oldNote.getUser().getId()) {
-			
-			Date modified = new Date();
+		
 			oldNote.setModifiedAt(modified);
 			oldNote.setTitle(note.getTitle());
 			oldNote.setDescription(note.getDescription());
@@ -54,6 +55,15 @@ public class NoteService {
 	public Set<Note> getNotes(int id) {
 		
 		return noteDao.getNotes(id);
+	}
+	
+	@Transactional
+	public void archive(int id) {
+		Note note = noteDao.getNoteById(id);
+		note.setNoteId(id);
+		note.setArchive(true);
+		note.setModifiedAt(modified);
+		noteDao.archive(note);
 	}
 
 }

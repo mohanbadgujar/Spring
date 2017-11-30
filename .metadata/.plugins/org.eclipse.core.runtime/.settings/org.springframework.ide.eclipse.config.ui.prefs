@@ -15,4 +15,5 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/SpringMVCExample/WebContent/WEB-INF/dispatcher-spring.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/SpringMVCExample/src/dispatcher-spring.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/SpringmvcRestService/src/main/webapp/WEB-INF/spring-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ToDo/src/main/webapp/WEB-INF/spring-dispatcher-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
 eclipse.preferences.version=1

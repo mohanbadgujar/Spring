@@ -19,6 +19,7 @@
 
 	<context:property-placeholder location="classpath:/email.properties" />
 	<tx:annotation-driven transaction-manager="transactionManager" />
+	
 	<mvc:annotation-driven></mvc:annotation-driven>
 
 	<mvc:resources mapping="/resources/**" location="/resources/" />
@@ -49,7 +50,6 @@
 			</props>
 		</property>
 	</bean>
-
 
 	<bean id="dataSource"
 
@@ -105,6 +105,12 @@
 	<bean id="noteService" class="com.bridgelabz.services.NoteService" />
 
 	<bean id="userValidation" class="com.bridgelabz.validator.UserValidation" />
+	
+	<mvc:resources location="/template/" mapping="/template/**" />
+	<mvc:resources location="/style/" mapping="/style/**" />
+	<mvc:resources location="/script/" mapping="/script/**" />
+	<mvc:resources location="/service/" mapping="/service/**" />
+	<mvc:resources location="/controller/" mapping="/controller/**" />
 
 	<mvc:interceptors>
 		<mvc:interceptor>
