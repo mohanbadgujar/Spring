@@ -8,7 +8,8 @@ toDo.factory('forgotPasswordService', function($http, $location) {
 		return $http({
 			method : "POST",
 			url : 'forgotPassword',
-			data : user
+			data : user,
+			
 		})
 	}
 	return abc;

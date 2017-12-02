@@ -42,9 +42,10 @@ public class UserServices {
 
 		User fromDB = userDao.getUserByEmailId(email);
 		String token = null;
-		if (fromDB != null && fromDB.getEmail().equals(email)
+		if (fromDB != null && fromDB.isActive() == true && fromDB.getEmail().equals(email)
 				&& passwordEncryptor.checkPassword(password, fromDB.getPassword())) {
 			token = TokenGenerator.generate(fromDB.getId());
+
 			return token;
 		}
 		return token;

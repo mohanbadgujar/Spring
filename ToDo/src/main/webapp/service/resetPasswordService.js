@@ -7,8 +7,9 @@ toDo.factory('resetPasswordService', function($http, $location) {
 	abc.resetUser = function(user) {
 		return $http({
 			method : "POST",
-			url : '/resetPassword/{token:.+}',
-			data : user
+			url : 'resetPasswords',
+			data : user,
+			headers:{'resettoken': user.token}
 		})
 	}
 	return abc;

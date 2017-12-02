@@ -111,6 +111,7 @@
 	<mvc:resources location="/script/" mapping="/script/**" />
 	<mvc:resources location="/service/" mapping="/service/**" />
 	<mvc:resources location="/controller/" mapping="/controller/**" />
+	<mvc:resources location="/Directives/" mapping="/Directives/**" />
 
 	<mvc:interceptors>
 		<mvc:interceptor>

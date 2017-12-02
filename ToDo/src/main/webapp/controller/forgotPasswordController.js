@@ -6,9 +6,8 @@ toDo.controller('forgotPasswordController', function($scope, forgotPasswordServi
 			a.then(function(response) {
 				
 				var token = response.data.msg;
-				console.log(token);
 				
-				var url = "/resetPassword/"+token;
+				//localStorage.setItem('resettoken',response.data.msg)
 				
 				$location.path("/resetPassword");
 				

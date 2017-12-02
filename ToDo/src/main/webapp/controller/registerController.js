@@ -36,18 +36,18 @@ toDo.controller('registerController', function($scope, registerService,$location
 		var RePass =  $scope.user.repassword
 		var mobile =  $scope.user.mobile
 		
-		/*	text = "Name must contain two words First Name and Last Name and one space between them.";
+			text = "Name must contain two words First Name and Last Name and one space between them.";
 			
 			document.getElementById("userNameError").innerHTML = text;
-			document.getElementById("userNameError").style.color = "red"; */
+			document.getElementById("userNameError").style.color = "red"; 
 
 		var NameRegx = /^\w+\s{1}\w+$/;
-		/*
-		 w - word 
+		
+		/* w - word 
 		 s - space
 		 + Quantifier — Matches between one and unlimited times, as many times as possible
-		 to add more word and space = \s{1}\w+
-		 */
+		 to add more word and space = \s{1}\w+*/
+		 
 
 		var EmailRegx = /^^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
 
@@ -55,7 +55,7 @@ toDo.controller('registerController', function($scope, registerService,$location
 
 		var MobileRegx = /^\d{10}$/;
 
-		/*	#Match the beginning of the string [789] #Match a 7, 8 or 9
+	/*		#Match the beginning of the string [789] #Match a 7, 8 or 9
 			\d    #Match a digit (0-9 and anything else that is a "digit" in the regex engine)
 			{9}   #Repeat the previous "\d" 9 times (9 digits)
 			$     #Match the end of the string */

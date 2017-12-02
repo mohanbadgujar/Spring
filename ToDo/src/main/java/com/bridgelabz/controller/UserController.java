@@ -4,7 +4,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
@@ -42,7 +41,10 @@ public class UserController {
 	public ResponseEntity<Response> registration(@RequestBody User user, BindingResult result,
 			HttpServletRequest request) {
 
+		System.out.println("In register api=");
 		Response resp = new Response();
+		UserErrorResponse err = new UserErrorResponse();
+		
 		userValidation.validate(user, result);
 		String url = request.getRequestURL().toString();
 
@@ -66,8 +68,7 @@ public class UserController {
 
 		}
 
-		UserErrorResponse err = new UserErrorResponse();
-		// err.setErrList(result.getFieldErrors());
+		err.setErrList(result.getFieldErrors());
 		err.setStatus(-1);
 		err.setMsg("Invalid Details");
 		return new ResponseEntity<Response>(err, HttpStatus.NOT_ACCEPTABLE);
@@ -81,15 +82,17 @@ public class UserController {
 		
 		String jwtToken = userService.authenticateUser(login.getEmail(), login.getPassword());
 		
+		System.out.println("Tokenis="+jwtToken);
+		
 		if (jwtToken == null) {
 			resp.setStatus(-1);
-			resp.setMsg("invalid user credential, user not present");
-			return new ResponseEntity<Response>(resp, HttpStatus.NOT_ACCEPTABLE);
+			resp.setMsg("Invalid user credential, user not present");
+			return new ResponseEntity<Response>(resp, HttpStatus.UNAUTHORIZED);
 		}
 
-		System.out.println("token is ="+jwtToken);
+	/*
 		HttpHeaders headers = new HttpHeaders();
-		headers.add("jwt", jwtToken);
+		headers.add("jwt", jwtToken);*/
 
 		resp.setStatus(1);
 		resp.setMsg(jwtToken);
@@ -106,7 +109,7 @@ public class UserController {
 
 		if (id < 0)
 
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Problem Occured");
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Not Verfied");
 
 		try {
 
@@ -118,15 +121,12 @@ public class UserController {
 
 		}
 
-		return ResponseEntity.ok("success");
+		return ResponseEntity.ok("Your are verified");
 	}
 
 	@RequestMapping(value = "/forgotPassword", method = RequestMethod.POST)
 	public ResponseEntity<Response> forgotProcess(@RequestBody User user, HttpServletRequest request,
 			HttpServletResponse response) {
-
-		System.out.println("In forgot Password Api");
-		
 		
 		User updatedUser = userService.getUserByEmailId(user.getEmail());
 
@@ -146,7 +146,7 @@ public class UserController {
 		return entity;
 	}
 
-	@RequestMapping(value = "/resetPassword/{token:.+}", method = RequestMethod.POST)
+/*	@RequestMapping(value = "/resetPassword/{token:.+}", method = RequestMethod.POST)
 	public ResponseEntity<String> resetPassword(@PathVariable("token") String token, @RequestBody User user,
 			HttpServletRequest request, HttpServletResponse response) {
 
@@ -162,6 +162,35 @@ public class UserController {
 		}
 
 		return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Password not reset");
+	}*/
+	
+	@RequestMapping(value = "/resetPasswords", method = RequestMethod.POST)
+	public ResponseEntity<Response> resetPassword(@RequestBody User user,
+			HttpServletRequest request, HttpServletResponse response) {
+
+		System.out.println("In reset password ...");
+		
+		String token = request.getHeader("resettoken");
+		
+		System.out.println("Token is="+token);
+		
+		int id = VerifyJwt.verify(token);
+
+		try {
+
+			userService.updateUser(id, user.getPassword());
+			
+			resp.setStatus(1);
+			resp.setMsg("Password Reset Successfully");
+			ResponseEntity<Response> entity = new ResponseEntity<Response>(resp, HttpStatus.OK);
+			return entity;
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		resp.setStatus(1);
+		resp.setMsg("Password Not reset");
+		return new ResponseEntity<Response>(resp, HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 
 	@RequestMapping(value = "/home")

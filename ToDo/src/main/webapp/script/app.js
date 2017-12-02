@@ -27,7 +27,11 @@ toDo.config([ '$stateProvider', '$urlRouterProvider',
 				controller : 'resetPasswordController'
 			});
 
-			
+			$stateProvider.state('/dummyPage', {
+				url : '/dummyPage',
+				templateUrl : 'template/dammyPage.html',
+				controller : 'dammyPageController'
+			});
 			
 			$stateProvider.state('home', {
 				url : '/home',

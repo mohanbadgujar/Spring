@@ -86,8 +86,8 @@ public class GoogleLoginController {
 			} else {	
 				String myaccessToken = TokenGenerator.generate(user.getId());
 				System.out.println("token geneted by jwt" + myaccessToken);
-				session.setAttribute("AccessToken", myaccessToken);
-				response.sendRedirect("http://localhost:8080/ToDo/home");
+				session.setAttribute("SocialLogin", myaccessToken);
+				response.sendRedirect("http://localhost:8080/ToDo/#!/dummyPage");
 
 			}
 			

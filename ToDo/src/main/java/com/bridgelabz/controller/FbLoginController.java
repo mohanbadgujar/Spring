@@ -1,7 +1,6 @@
 package com.bridgelabz.controller;
 
 import java.io.IOException;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -33,6 +32,17 @@ public class FbLoginController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	
+	@RequestMapping(value = "/socialPageRedirect")
+	public ResponseEntity<Response> redirectToHome( HttpSession session) {
+		
+			String token = (String) session.getAttribute("SocialLogin");
+			Response res = new Response();
+			res.setStatus(1);
+			res.setMsg(token);
+			return ResponseEntity.ok(res);
 	}
 
 	@RequestMapping(value = "/getfacebooklogin")
@@ -84,7 +94,7 @@ public class FbLoginController {
 
 				String accessToken = TokenGenerator.generate(user.getId());
 				System.out.println("token geneted by jwt" + accessToken);
-				session.setAttribute("AccessToken", accessToken);
+				session.setAttribute("SocialLogin", accessToken);
 				response.sendRedirect("http://localhost:8080/ToDo/#!/dummyPage");
 			}
 
@@ -92,6 +102,7 @@ public class FbLoginController {
 			System.out.print("exception occured during registering user from fb:");
 			e.printStackTrace();
 		}
+		
 		return null;
 	}
 }

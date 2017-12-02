@@ -12,8 +12,6 @@
 
 				<form>
 
-					<br>
-
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-user"
 							style="width: 18px;"></i></span> <input class="form-control" type="text" ng-model="user.fullName"
@@ -21,7 +19,7 @@
 
 					</div>
 					<p id="userNameError"></p>
-					<p><font color="red"><form:errors path="fullName" /></font></p>
+					<p><font color="red"><form:err path="fullName" /></font></p>
 					<br>
 
 					<div class="input-group margin-bottom-sm">
@@ -81,11 +79,8 @@
 					</div>
 					<br>
 
-					<!-- <%
-							String reg_msg=(String)request.getAttribute("regerror");  
-							if(reg_msg!=null)
-							out.println("<center><font color=red size=4px>"+reg_msg+"</font></center>");
-					%> -->
+					<p><center><font color=red size=4px>{{error}}</font></center></p>
+					<br>
 
 				</form>
 

@@ -16,6 +16,7 @@ toDo.controller('loginController', function($scope, loginService,$location){
 	$scope.redirectreg = function() {
 		$location.path("register");
 	}
+
 });
 
 
