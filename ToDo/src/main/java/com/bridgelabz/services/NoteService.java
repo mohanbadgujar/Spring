@@ -2,25 +2,27 @@ package com.bridgelabz.services;
 
 import java.util.Date;
 import java.util.Set;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.bridgelabz.dao.NoteDao;
+import com.bridgelabz.dao.UserDao;
 import com.bridgelabz.model.Note;
-import com.bridgelabz.model.User;
 
 public class NoteService {
 	
 	@Autowired
 	private NoteDao noteDao;
 	
+	@Autowired
+	private UserDao userDao;
+	
 	Date modified = new Date();
 
 	@Transactional
-	public void createNote(Note note, User user) {
+	public void createNote(Note note, int userId) {
 		
-		note.setUser(user);
+		note.setUser(userDao.getUserById(userId));
 		Date createDate = new Date();
 		note.setCreatedAt(createDate);
 		note.setModifiedAt(createDate);
@@ -29,10 +31,10 @@ public class NoteService {
 	}
 
 	@Transactional
-	public boolean updateNote(Note note, User user) {
+	public boolean updateNote(Note note, int userId) {
 		Note oldNote = noteDao.getNoteById(note.getNoteId());
 		
-		if (user.getId() == oldNote.getUser().getId()) {
+		if (userId == oldNote.getUser().getId()) {
 		
 			oldNote.setModifiedAt(modified);
 			oldNote.setTitle(note.getTitle());

@@ -11,10 +11,12 @@
 <link rel="stylesheet" href="style/login.css">
 <link rel="stylesheet" href="style/register.css">
 <link rel="stylesheet" href="style/forgotPassword.css">
+<link rel="stylesheet" href="style/home.css">
+<link rel="stylesheet" href="style/topNavigationBar.css">
 <link rel="stylesheet" href="style/sideNavigationBar.css">
-<link rel="stylesheet" href="style/addNote.css">
 
 <style type="text/css"></style>
+
 </head>
 
 <body ng-app="toDo">
@@ -24,6 +26,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
 <script type="text/javascript" src="script/app.js"></script>
@@ -43,8 +46,9 @@
 <script type="text/javascript" src="service/dammyPageService.js"></script>
 <script src="controller/dammyPageController.js"></script>
 
+<script type="text/javascript" src="service/homeService.js"></script>
 <script src="controller/homeController.js"></script>
 
- <script type="text/javascript" src="Directives/CustomiseDirectives.js"></script>
+<script type="text/javascript" src="Directives/CustomiseDirectives.js"></script>
     
 </html>

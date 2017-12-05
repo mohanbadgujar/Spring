@@ -1,5 +1,4 @@
 var app = angular.module("toDo");
-
 app.directive("topNavigationBar", function() {
     return {
     	templateUrl :'template/topNavigationBar.html'
@@ -7,13 +6,13 @@ app.directive("topNavigationBar", function() {
 });
 
 app.directive("sideNavigationBar", function() {
-    return {
-    	templateUrl :'template/sideNavigationBar.html'
-    };    
+        return {
+        	templateUrl :'template/sideNavigationBar.html'
+        };
 });
 
-/*app.directive("addNote", function() {
+app.directive("addNotes", function() {
     return {
     	templateUrl :'template/addNote.html'
-    };    
-});*/
+    };
+});

@@ -5,7 +5,235 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2017-12-01T21:11:19Z</updated>
+  <updated>2017-12-04T15:28:57Z</updated>
+  <entry>
+    <title>Spring Tools 4 - public beta released</title>
+    <link rel="alternate" href="https://spring.io/blog/2017/12/04/spring-tools-4-public-beta-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2017-11-29:3114</id>
+    <updated>2017-12-04T15:28:57Z</updated>
+    <content type="html">&lt;p&gt;&lt;img src="https://github.com/spring-projects/sts4/wiki/images/springtools4-main.png" alt="spring tools 4" /&gt;&lt;/p&gt;
+&lt;p&gt;Beginning today, we enter a new chapter in the tooling landscape for Spring and the development of enterprise applications built on top of the de-facto standard, Spring Boot. By unveiling the public beta of the next generation of our Spring tooling, we allow developers around the globe to get a preview of what is coming next to improve their developer experience around Spring and Spring Boot.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-aware" class="anchor" name="spring-aware"&gt;&lt;/a&gt;Spring Aware&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://github.com/spring-projects/sts4/wiki/images/screenshot-navigation.png" alt="smart code completion" /&gt;&lt;/p&gt;
+&lt;p&gt;The all-new Spring Tools 4 analyze your projects on the fly, understand the Spring constructs inside, and provide easy and super quick navigation to all your Spring elements. Finding a specific request mapping, an exact bean definition, or a newly created function was never as easy as with the new Spring Tools 4.&lt;/p&gt;&lt;h2&gt;&lt;a href="#information-from-live-running-apps" class="anchor" name="information-from-live-running-apps"&gt;&lt;/a&gt;Information from live-running apps&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/wiki/spring-projects/sts4/images/screenshot-live-hovers.png" alt="in-depth information from live-running applications" /&gt;&lt;/p&gt;
+&lt;p&gt;The all-new Spring Tools 4 introduce a new concept of overlaying your source code with detailed information from live-running Spring Boot apps. As soon as you run your boot app on your machine, additional information from this app with show up directly in your source code editor. That way, you can see (and directly jump to) available request mappings, for example. But the most powerful part here are the detailed wiring reports for your beans. You can see exactly which bean (from which source) got injected into your @Autowired-annotated dependency (for example), and where your bean got injected in your application. This provides a unique insight into the running application directly in your source code. You don’t have to collect that data yourself and find the right lines of code manually. The tooling does that for you automatically.&lt;/p&gt;&lt;h2&gt;&lt;a href="#ide-agnostic" class="anchor" name="ide-agnostic"&gt;&lt;/a&gt;IDE agnostic&lt;/h2&gt;
+&lt;p&gt;We know that Spring developers love their IDEs and code editors. And we want them to continue to use the tools that they love. Therefore we implemented most parts of the Spring Tools 4 in an IDE-agnostic way. You can use them in:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Eclipse&lt;/strong&gt; (or download a ready-to-use distribution of Eclipse, as usual)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Visual Studio Code&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Atom IDE&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And that is just the beginning. We expect more environments to join this party in the future.&lt;/p&gt;&lt;h2&gt;&lt;a href="#re-built-from-scratch" class="anchor" name="re-built-from-scratch"&gt;&lt;/a&gt;Re-built from scratch&lt;/h2&gt;
+&lt;p&gt;To realize these all-new Spring Tools 4, we decided to re-write most of the Spring tooling from scratch - with these goals in mind from the beginning:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Let’s be IDE agnostic&lt;/strong&gt; - let every developer continue to use the environments they love.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Build for performance right from the start&lt;/strong&gt; - we hate to wait for our IDE or editor to finish before we can continue coding. Therefore the Spring Tools 4 are designed to never block the user plus deliver results quickly.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Build for modern Spring technologies&lt;/strong&gt; - the tools focus on Spring Boot and annotation-driven Spring app development.&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#download" class="anchor" name="download"&gt;&lt;/a&gt;Download&lt;/h2&gt;
+&lt;p&gt;Get the public beta (and more details) from here: &lt;a href="https://spring.io/tools4"&gt;https://spring.io/tools4&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;&lt;a href="#feedback" class="anchor" name="feedback"&gt;&lt;/a&gt;Feedback&lt;/h2&gt;
+&lt;p&gt;We love feedback. And we love to hear from you. Let us know what you think about the new tools, share your experiences with us, and let us know what you are missing. Feedback is always welcome.&lt;/p&gt;
+&lt;hr/&gt;&lt;h2&gt;&lt;a href="#faq" class="anchor" name="faq"&gt;&lt;/a&gt;FAQ&lt;/h2&gt;&lt;h3&gt;&lt;a href="#when-will-spring-tools-4-be-ga" class="anchor" name="when-will-spring-tools-4-be-ga"&gt;&lt;/a&gt;When will Spring Tools 4 be GA?&lt;/h3&gt;
+&lt;p&gt;You can go ahead and download the public beta version right now. We will publish updates to the public beta in relatively short cycles. The first official release will go GA in mid 2018.&lt;/p&gt;&lt;h3&gt;&lt;a href="#what-will-happen-to-the-old-sts-3-9-x-tooling" class="anchor" name="what-will-happen-to-the-old-sts-3-9-x-tooling"&gt;&lt;/a&gt;What will happen to the old STS 3.9.x tooling?&lt;/h3&gt;
+&lt;p&gt;We will continue to ship updates for STS 3.9.x as a full distribution until mid of 2018 and will update the distribution to the upcoming Eclipse Photon (4.8) release. In case you still need important parts of the old tooling in Eclipse that haven&amp;rsquo;t been supported in Spring Tools 4 for Eclipse, you will be able to install those parts as add-on features into the Spring Tools 4 Eclipse distribution and those parts will continue to receive maintenance updates for some time.&lt;/p&gt;&lt;h3&gt;&lt;a href="#is-this-compatible-with-boot-1-5-and-boot-2-0" class="anchor" name="is-this-compatible-with-boot-1-5-and-boot-2-0"&gt;&lt;/a&gt;Is this compatible with Boot 1.5 and Boot 2.0?&lt;/h3&gt;
+&lt;p&gt;Yes, the public beta is already compatible with Spring Boot 1.5.x and Spring Boot 2.0.&lt;/p&gt;&lt;h3&gt;&lt;a href="#does-spring-tools-4-include-java-language-support" class="anchor" name="does-spring-tools-4-include-java-language-support"&gt;&lt;/a&gt;Does Spring Tools 4 include Java language support?&lt;/h3&gt;
+&lt;p&gt;The Spring Tools 4 themselves do not include any specific support for programming in Java, like standard Java code completion, etc. However, we recommend to use existing Java language support for the various environments. The Eclipse-based distribution of the Spring Tools 4 (aka Spring Tool Suite 4) includes the Eclipse Java support. For Visual Studio Code, you should install the Java Extension Pack, which is a combination of the regular Java language tooling (provided from RedHat and Eclipse) and the launching and debugging support for Java for Visual Studio Code (from Microsoft). For Atom, there is also a Java extension around (that is based on the same code as the Java support for Visual Studio Code).&lt;/p&gt;&lt;h3&gt;&lt;a href="#does-spring-tools-4-support-jdk9" class="anchor" name="does-spring-tools-4-support-jdk9"&gt;&lt;/a&gt;Does Spring Tools 4 support JDK9?&lt;/h3&gt;
+&lt;p&gt;You can run the public beta on a JDK9 JVM and you can use the existing JDK9-ready Java language tooling in Eclipse, Visual Studio Code, and Atom. But the Spring Tools 4 themselves do not support projects that rely on the JDK9 language syntax yet. This will be worked on during the upcoming beta cycles.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Batch 4.0.0.RELEASE is now available</title>
+    <link rel="alternate" href="https://spring.io/blog/2017/12/04/spring-batch-4-0-0-release-is-now-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Michael Minella</name>
+    </author>
+    <id>tag:spring.io,2017-12-04:3123</id>
+    <updated>2017-12-04T14:59:03Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce that Spring Batch 4.0.0.RELEASE is now available through Github, the Pivotal download repository, and Maven Central. This is the generally available release of the 4.0 line. Many thanks to all that contributed to this release.&lt;/p&gt;&lt;h2&gt;&lt;a href="#how-we-got-here" class="anchor" name="how-we-got-here"&gt;&lt;/a&gt;How We Got Here&lt;/h2&gt;
+&lt;p&gt;Spring Batch 4 is the first major version release of Spring Batch since 3.0 went out in 2014. A lot has changed in the Spring ecosystem since that version went out. This release is intended to bring Spring Batch up to date with those changes. When Spring Batch 3 came out, Java configuration was just beginning to take over XML-based configuration. Spring Boot had not been announced yet. Also, while JDK 8 had just come out, Spring Framework 4 (which Spring Batch 3 was based on) still supported java back to JDK 6. Spring Batch 4 brings upgrades to all of these areas. Let&amp;rsquo;s take a look.&lt;/p&gt;&lt;h2&gt;&lt;a href="#new-baseline" class="anchor" name="new-baseline"&gt;&lt;/a&gt;New Baseline&lt;/h2&gt;
+&lt;p&gt;Spring Batch 3 was based on Spring Framework 4, which supported an ecosystem of dependencies that went back to Java 6. Spring Batch 4 takes a fresh look at its dependency tree and brings it up to date with the upcoming Spring Boot 2 dependency tree, including Spring Framework 5 and Java 8 as baseline requirements. While Spring Batch has had a complete Java 8 story for years, this upgrade lets us improve and simplify things internally by allowing us to use Java 8 idioms internally.&lt;/p&gt;&lt;h2&gt;&lt;a href="#improved-java-configuration" class="anchor" name="improved-java-configuration"&gt;&lt;/a&gt;Improved Java Configuration&lt;/h2&gt;
+&lt;p&gt;As mentioned previously, Spring Batch 4 is the first major version release since Spring Boot came out. In this release, we have taken strides to improve the Java configuration experience in all the areas where users felt the most pain. Builders are now available for all &lt;code&gt;ItemReader&lt;/code&gt; and &lt;code&gt;ItemWriter&lt;/code&gt; implementations. An example of the simplification between Spring Batch 3 and 4 is configuring the &lt;code&gt;FlatFileItemReader&lt;/code&gt;. Using the Java configuration capabilities of Spring Batch 3, your configuration would look something like the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+public FlatFileItemReader&amp;lt;Foo&amp;gt; reader(Resource resource) &#xD;
+    throws Exception {&#xD;
+&#xD;
+        FlatFileItemReader&amp;lt;Foo&amp;gt; reader = new FlatFileItemReader&amp;lt;&amp;gt;();&#xD;
+&#xD;
+        reader.setName(“fooReader”);&#xD;
+        reader.setResource(resource);&#xD;
+&#xD;
+        BeanWrapperFieldSetMapper&amp;lt;Foo&amp;gt; fieldSetMapper = &#xD;
+            new BeanWrapperFieldSetMapper&amp;lt;&amp;gt;();&#xD;
+        fieldSetMapper.setTargetType(Foo.class);&#xD;
+        fieldSetMapper.afterPropertiesSet();&#xD;
+&#xD;
+        DelimitedLineTokenizer tokenizer = new DelimitedLineTokenizer();&#xD;
+        tokenizer.setNames(new String[] {“first”, “second”, “third”});&#xD;
+        tokenizer.afterPropertiesSet();&#xD;
+&#xD;
+        DefaultLineMapper lineMapper = new DefaultLineMapper();&#xD;
+        lineMapper.setLineTokenizer(tokenizer);&#xD;
+        lineMapper.setFieldSetMapper(fieldSetMapper);&#xD;
+&#xD;
+        reader.setLineMapper(lineMapper);&#xD;
+&#xD;
+        return reader;&#xD;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With Spring Batch 4, the previous configuration is reduced to the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+public FlatFileItemReader&amp;lt;Foo&amp;gt; reader(Resource resource) {&#xD;
+        return new FlatFileItemReaderBuilder&amp;lt;Foo&amp;gt;()&#xD;
+            .name(“fooReader”)&#xD;
+            .resource(resource)&#xD;
+            .delimited()&#xD;
+            .names(new String[]{“first”, “second”, “third”})&#xD;
+            .targetType(Foo.class)&#xD;
+            .build();&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Fluent builders such as that shown in the preceding example are available for all &lt;code&gt;ItemReader&lt;/code&gt; and &lt;code&gt;ItemWriter&lt;/code&gt; implementations with this release.&lt;/p&gt;&lt;h2&gt;&lt;a href="#new-documentation" class="anchor" name="new-documentation"&gt;&lt;/a&gt;New Documentation&lt;/h2&gt;
+&lt;p&gt;Spring Batch&amp;rsquo;s documentation had not had a major overhaul in years. It is time. With this release the documentation has been migrated to Asciidoc to simplify creation of the documentation as well as to become consistent across the Spring portfolio. In addition to that, the reference documentation now has the option to view any example in either Java configuration or XML configuration by using a toggle at the top of each page.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/mminella/blog_images/master/documentation_toggle.png" alt="Java configuration toggle" /&gt;&lt;/p&gt;
+&lt;p&gt;This toggle gives you the option to have the documentation presented to you in the way you need. If you are on a project that is XML-based, the entire file shows what is appropriate for XML configuration. If you use Java configuration, the entire file shows what is appropriate for a project using Java configuration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#wait-there-rsquo-s-more" class="anchor" name="wait-there-rsquo-s-more"&gt;&lt;/a&gt;Wait! There&amp;rsquo;s More!&lt;/h2&gt;
+&lt;p&gt;Beyond all of the above, Spring Batch 4 includes other improvements, including a new &lt;code&gt;ItemProcessor&lt;/code&gt; that delegates to a &lt;code&gt;java.util.Function&lt;/code&gt;, letting you create a processor with zero Spring dependencies. Enhancements provided by the community, such as the &lt;code&gt;Query&lt;/code&gt; support in the &lt;code&gt;MongoItemReader&lt;/code&gt; provided by Takaaki Iida, provide examples of this new feature.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-do-you-think" class="anchor" name="what-do-you-think"&gt;&lt;/a&gt;What do you think?&lt;/h2&gt;
+&lt;p&gt;We look forward to your feedback on these new features in &lt;a href="https://jira.spring.io/browse/BATCH/"&gt;Jira&lt;/a&gt;, &lt;a href="https://stackoverflow.com/tags/spring-batch"&gt;StackOverflow&lt;/a&gt;, or to me directly via Twitter &lt;a href="https://twitter.com/michaelminella"&gt;@michaelminella&lt;/a&gt; or in person at SpringOne Platform!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://projects.spring.io/spring-batch/"&gt;Spring Batch Home&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-batch"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-batch/4.0.x/reference/html/index.html"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tips: Spring Tool Suite 4</title>
+    <link rel="alternate" href="https://spring.io/blog/2017/12/04/spring-tips-spring-tool-suite-4" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2017-12-04:3122</id>
+    <updated>2017-12-04T02:30:00Z</updated>
+    <content type="html">&lt;p&gt;Speaker: &lt;a href="https://www.twitter.com/starbuxman"&gt;Josh Long&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hi Spring fans! In this Spring Tips, we&amp;rsquo;ll look at Spring Tool Suite 4, new runtime feedback and the IDE-agnostic language servers that underpin all of it. I&amp;rsquo;m releasing this Spring Tips installment early, just in time SpringOne Platform 2017 and the big announcements of the day. &lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/m-AOu6vzJMQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Session (Core/MongoDB/Geode) 2.0.0.RC2 released!</title>
+    <link rel="alternate" href="https://spring.io/blog/2017/12/03/spring-session-core-mongodb-geode-2-0-0-rc2-released" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Greg Turnquist</name>
+    </author>
+    <id>tag:spring.io,2017-11-29:3116</id>
+    <updated>2017-12-03T21:52:16Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;Greetings Spring community,&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In preparation for the soon-to-be GA release, Spring Session, Spring Session MongoDB, and Spring Session for Apache Geode and Pivotal GemFire have all aligned to versions 2.0.0.RC2 for this release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In case you missed it, this is what&amp;#8217;s included with each of the modules:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-session/"&gt;Core&lt;/a&gt; - includes support for Redis, JDBC, and Hazelcast&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-session-data-mongodb#spring-session-mongodb"&gt;MongoDB&lt;/a&gt; - both traditional blocking as well as reactive support for MongoDB&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-session-data-geode#spring-session-for-apache-geode"&gt;Apache Geode&lt;/a&gt; - support for Apache Geode as well as Pivotal GemFire (including the &lt;a href="https://docs.pivotal.io/p-cloud-cache/1-2/index.html"&gt;PCC&lt;/a&gt; service with the &lt;a href="https://docs.pivotal.io/ssc-gemfire/index.html"&gt;SSC&lt;/a&gt; extension on &lt;a href="https://pivotal.io/platform"&gt;PCF&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In this version, Spring Session has done some refactorings and minor tweaks in its APIs. There were minor breaking changes in some of the contracts, but nothing that impacts end users.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We are working toward a BOM (Bill of Materials) similar to several other Spring projects (like Spring Cloud and Spring Data). Once released, this will allow the versions of the store-specific solution you choose along with the version of Spring Session core to align. Stay tuned!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="versions"&gt;&lt;a class="anchor" href="#versions"&gt;&lt;/a&gt;Versions&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Key supported libraries in Spring Session include:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Framework 5.0.2.RELEASE&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Project Reactor Bismuth-SR4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Data Kay-SR2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Security 5.0.0.RELEASE&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hazelcast 3.9&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lettuce driver 5.0.1.RELEASE&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring Session MongoDB includes these additional dependencies:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;MongoDB 3.5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MongoDB (reactive streams) 1.6.0&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring Session for Apace Geode (&amp;amp; Pivotal GemFire) includes these additional dependencies:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Apache Geode 1.2.1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pivotal GemFire 9.1.1&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Feel free to give the bits a spin!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="links"&gt;&lt;a class="anchor" href="#links"&gt;&lt;/a&gt;Links&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Session (Core) - &lt;a href="http://projects.spring.io/spring-session/"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-session/docs/2.0.0.RC2/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-session"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Session MongoDB - &lt;a href="http://projects.spring.io/spring-session-data-mongodb/"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-session-data-mongodb/docs/2.0.0.RC2/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-session+mongodb"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Session for Apache GeodeGeode - &lt;a href="http://docs.spring.io/spring-session-data-geode/docs/2.0.0.RC2/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-session+gemfire"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We hope to see you at &lt;a href="https://springoneplatform.io/"&gt;SpringOne Platform&lt;/a&gt; this week. It will be packed with many Spring talks, opportunities to learn about the latest and greatest features and of course some previews about what we’re planning to do next.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud Data Flow for Cloud Foundry 1.3.0.M3 released</title>
     <link rel="alternate" href="https://spring.io/blog/2017/12/01/spring-cloud-data-flow-for-cloud-foundry-1-3-0-m3-released" />
@@ -1179,96 +1407,5 @@ dependencies {&#xD;
     ...&#xD;
 }
 &lt;/code&gt;&lt;/pre&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Data Ingalls SR9 and Kay SR2 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/11/27/spring-data-ingalls-sr9-and-kay-sr2-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Mark Paluch</name>
-    </author>
-    <id>tag:spring.io,2017-11-27:3103</id>
-    <updated>2017-11-27T16:43:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the entire team, I’d like to announce the availability of Ingalls SR9 and Kay SR2 releases. We didn&amp;rsquo;t announce Ingalls SR8 at the time we shipped it, apologies for that.&lt;br/&gt;The service releases ship over 90 issues fixed in total and are recommended upgrades for all users.&lt;/p&gt;
-&lt;p&gt;For your convenience the service releases are going to be picked up in the upcoming Spring Boot 1.5.9 release, and Kay SR2 will be part of Spring Boot 2.0 M7. You can find the complete list of issues fixed &lt;a href="https://jira.spring.io/issues/?filter=15677"&gt;here for Ingalls SR9&lt;/a&gt; and &lt;a href="https://jira.spring.io/issues/?filter=15830"&gt;here for Kay SR2&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-data-ingalls-sr9" class="anchor" name="spring-data-ingalls-sr9"&gt;&lt;/a&gt;Spring Data Ingalls SR9&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Data Commons 1.13.9 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-commons/1.13.9.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.13.9.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.13.9.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.13.9.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data JPA 1.11.9 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-jpa/1.11.9.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.11.9.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.11.9.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.11.9.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Neo4j 4.2.9 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-neo4j/4.2.9.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/4.2.9.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/4.2.9.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/4.2.9.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data KeyValue 1.2.9 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-keyvalue/1.2.9.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/1.2.9.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/1.2.9.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/1.2.9.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Gemfire 1.9.9 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-gemfire/1.9.9.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.9.9.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.9.9.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.9.9.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data MongoDB 1.10.9 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-mongodb/1.10.9.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.10.9.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.10.9.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.10.9.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data for Apache Cassandra 1.5.9 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-cassandra/1.5.9.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.5.9.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.5.9.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.5.9.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data for Apache Solr 2.1.9 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-solr/2.1.9.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/2.1.9.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/2.1.9.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/2.1.9.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data LDAP 1.0.9 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-ldap/1.0.9.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/1.0.9.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/1.0.9.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/1.0.9.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Envers 1.1.9 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-envers/1.1.9.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/envers/docs/1.1.9.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/envers/docs/1.1.9.RELEASE/reference/html"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data REST 2.6.9 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-rest-webmvc/2.6.9.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.6.9.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.6.9.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.6.9.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Redis 1.8.9 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-redis/1.8.9.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.8.9.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.8.9.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.8.9.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Elasticsearch 2.1.9 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/2.1.9.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/2.1.9.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/2.1.9.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/2.1.9.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Couchbase 2.2.9 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/2.2.9.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/2.2.9.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/2.2.9.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/2.2.9.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;h2&gt;&lt;a href="#spring-data-kay-sr2" class="anchor" name="spring-data-kay-sr2"&gt;&lt;/a&gt;Spring Data Kay SR2&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Data Commons 2.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-commons/2.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data JPA 2.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-jpa/2.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Neo4j 5.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-neo4j/5.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/5.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/5.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/5.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data KeyValue 2.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-keyvalue/2.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/2.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/2.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/2.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Gemfire 2.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-gemfire/2.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/2.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/2.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/2.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data MongoDB 2.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-mongodb/2.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/2.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/2.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/2.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data for Apache Cassandra 2.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-cassandra/2.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/2.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/2.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/2.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data for Apache Solr 3.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-solr/3.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/3.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/3.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/3.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data for Apache Geode 2.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-geode/2.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/geode/docs/2.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/geode/docs/2.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/geode/docs/2.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data LDAP 2.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-ldap/2.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/2.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/2.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/2.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Envers 2.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-envers/2.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/envers/docs/2.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/envers/docs/2.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data REST 3.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-rest-webmvc/3.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/3.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/3.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/3.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Redis 2.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-redis/2.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/2.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/2.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/2.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Elasticsearch 3.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/3.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Couchbase 3.0.2 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/3.0.2.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.0.2.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.0.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.0.2.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;On a final note, SpringOne Platform is around the corner! Meet the Spring Data team at SpringOne Platform 2017 in San Francisco, California, next week. We’ve prepared a lot of sessions to cover Spring &amp;amp; Data related topics and it’s not too late to &lt;a href="https://2017.springoneplatform.io/ehome/s1p/registration"&gt;register&lt;/a&gt;.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Framework 5.0.2 and 4.3.13 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/11/27/spring-framework-5-0-2-and-4-3-13-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Juergen Hoeller</name>
-    </author>
-    <id>tag:spring.io,2017-11-27:3102</id>
-    <updated>2017-11-27T12:55:09Z</updated>
-    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m pleased to announce that Spring Framework &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10000&amp;version=16353"&gt;5.0.2&lt;/a&gt; and &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10000&amp;version=16354"&gt;4.3.13&lt;/a&gt; are &lt;a href="https://projects.spring.io/spring-framework/"&gt;available now&lt;/a&gt;, as a pair of refinement releases which are recommended as immediate upgrades for all Spring users.&lt;br/&gt;They will also be part of the upcoming Spring Boot 2.0 M7 and 1.5.9 releases, respectively.&lt;/p&gt;
-&lt;p&gt;5.0.2 comes with significant tightening-up across the framework, including performance improvements and fine-tuned configuration variants. Many of those changes have been backported to 4.3.13 for streamlined consumption in existing applications.&lt;/p&gt;
-&lt;p&gt;Please note: Our Castor XML support is marked as deprecated now due to the inactivity of the Castor project. On a related note, we are effectively deprecating JDK 6 support in the 4.3.x line, ending our first-class efforts for it; more on this in a &lt;a href="https://spring.io/blog/2017/11/27/end-of-first-class-jdk-6-support"&gt;separate blog post&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Next up is Spring Framework 5.0.3 in late December, accompanied by a 4.3.14 release, wrapping up our core efforts for this year. Please report any issues you might experience against 5.0.2 or 4.3.13, allowing us to provide timely fixes before the end of the year still.&lt;/p&gt;
-&lt;p&gt;Cheers,&lt;br/&gt;Juergen&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>End of first-class JDK 6 support</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/11/27/end-of-first-class-jdk-6-support" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Juergen Hoeller</name>
-    </author>
-    <id>tag:spring.io,2017-11-20:3096</id>
-    <updated>2017-11-27T12:54:38Z</updated>
-    <content type="html">&lt;p&gt;It is about time: The official end of of commercial JDK 6 support is coming up soon, with &lt;a href="http://www.oracle.com/technetwork/java/eol-135779.html"&gt;Oracle&lt;/a&gt; declaring December 2018 and &lt;a href="https://developer.ibm.com/wasdev/docs/end-java-se-6-go/"&gt;IBM&lt;/a&gt; declaring April 2018 as the end of their extended support.&lt;/p&gt;
-&lt;p&gt;From a Spring perspective, we take the opportunity to deemphasize JDK 6 support on our end. We&amp;rsquo;ll keep tolerating a JDK 6 runtime in the entire Spring Framework 4.3.x line for all further maintenance releases. However, we won&amp;rsquo;t make compromises for JDK 6 anymore, asking you to upgrade to JDK 7+ for fixes that we&amp;rsquo;d have to work around specifically for JDK 6 on our end.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Even for JDK 7, we expect a recent patch release to be in use, as provided by Oracle, IBM and Red Hat within their server platforms. If available, consider a straight upgrade to JDK 8!&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;With JDK 9 having arrived, our JDK support range doesn&amp;rsquo;t shrink: Spring Framework 4.3.10+ effectively provides first-class support for JDK 7 and 8 and runtime tolerance for JDK 6 and 9.&lt;/p&gt;
-&lt;p&gt;As a reminder: Spring Framework 5.0 requires JDK 8+ and introduces first-class support for JDK 9, with timely tracking of the pending JDK 10 and 11 releases in the upcoming Spring Framework 5.1 and 5.2 releases next year. We strongly recommend an upgrade to Spring Framework 5.0+ for any use of JDK 9+, in particular in new project development efforts.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;On a related note, &lt;a href="http://start.spring.io/"&gt;start.spring.io&lt;/a&gt; does not provide JDK 6 options anymore. At the same time, it features JDK 9 project options now, aligned with Spring Boot 2.0 on Spring Framework 5.0.&lt;/em&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tips: Bootiful Testing</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/11/22/spring-tips-bootiful-testing" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2017-11-20:3097</id>
-    <updated>2017-11-22T01:00:00Z</updated>
-    <content type="html">&lt;p&gt;Speaker: &lt;a href="https://www.twitter.com/starbuxman"&gt;Josh Long&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Hi Spring fans! In this installment of Spring Tips we&amp;rsquo;ll look at testing and test-driven development, in general, in terms of the Spring ecosystem.&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lTSJCr7xdbM" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
   </entry>
 </feed>

@@ -73,7 +73,7 @@ public class UserServices {
 	@Transactional
 	public boolean updateUser(int id, String password) {
 		User user = userDao.getUserById(id);
-		String encryptedPassword = passwordEncryptor.encryptPassword(user.getPassword());
+		String encryptedPassword = passwordEncryptor.encryptPassword(password);
 		user.setPassword(encryptedPassword);
 		return userDao.updateUser(user);
 	}

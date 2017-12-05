@@ -4,6 +4,7 @@
 	margin-bottom: 25px;
 	margin-left: 20%;
 }
+
 #noteDescription{
 	outline:none;
 	padding-top:5px;
@@ -14,7 +15,7 @@
 	padding-top:5px;
 }
 
-
 [contentEditable=true]:empty:not(:focus):before{
 	color:#989faa;
-content:attr(data-ph) }
+	content:attr(data-ph)
+ }

@@ -112,10 +112,13 @@
 	<mvc:resources location="/service/" mapping="/service/**" />
 	<mvc:resources location="/controller/" mapping="/controller/**" />
 	<mvc:resources location="/Directives/" mapping="/Directives/**" />
+	<mvc:resources location="/images/" mapping="/images/**" />
+	<mvc:resources location="/bower_components/" mapping="/bower_components/**" />
 
 	<mvc:interceptors>
 		<mvc:interceptor>
-			<mvc:mapping path="/user/**" />
+			<mvc:mapping path="/user/**" /> 
+			<mvc:mapping path="/note/**" />
 			<bean id="loginInterceptor" class="com.bridgelabz.util.Interceptor"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors>

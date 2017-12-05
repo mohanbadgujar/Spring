@@ -14,11 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.bridgelabz.jsonResponse.Response;
 import com.bridgelabz.model.Note;
-import com.bridgelabz.model.User;
 import com.bridgelabz.services.NoteService;
 
 @RestController
-@RequestMapping(value = "/user")
+@RequestMapping(value = "/note")
 public class NoteController {
 
 	@Autowired
@@ -27,84 +26,90 @@ public class NoteController {
 	Response response = new Response();
 
 	@RequestMapping(value = "/createnote", method = RequestMethod.POST)
-	public ResponseEntity<Response> createNote(@RequestBody Note note, @RequestAttribute("loggedInUser") User user) {
+	public ResponseEntity<Response> createNote(@RequestBody Note note, @RequestAttribute int userId) {
 		try {
-			noteService.createNote(note, user);
-			response.setStatus(1);
-			response.setMsg("Note saved");
-			return new ResponseEntity<Response>(response, HttpStatus.OK);
+			noteService.createNote(note, userId);
 		} catch (Exception e) {
 			e.printStackTrace();
 			response.setStatus(-1);
-			response.setMsg("Note could not be saved");
+			response.setMsg("ERROR : " + e.getMessage() + " CAUSE : " + e.getCause());
 			return new ResponseEntity<Response>(response, HttpStatus.CONFLICT);
 		}
+		response.setStatus(1);
+		response.setMsg("Note saved");
+		return new ResponseEntity<Response>(response, HttpStatus.OK);
 	}
 
 	@RequestMapping(value = "/updatenote", method = RequestMethod.PUT)
-	public ResponseEntity<Response> updateNote(@RequestBody Note note, @RequestAttribute("loggedInUser") User user) {
+	public ResponseEntity<Response> updateNote(@RequestBody Note note, @RequestAttribute int userId) {
 		try {
-			noteService.updateNote(note, user);
-			response.setStatus(1);
-			response.setMsg("Note Updated");
-			return new ResponseEntity<Response>(response, HttpStatus.OK);
+			noteService.updateNote(note, userId);
 		} catch (Exception e) {
 			e.printStackTrace();
 			response.setStatus(-1);
 			response.setMsg("Note could not be updated");
 			return new ResponseEntity<Response>(response, HttpStatus.CONFLICT);
 		}
+		response.setStatus(1);
+		response.setMsg("Note Updated");
+		return new ResponseEntity<Response>(response, HttpStatus.OK);
 	}
 
-	@RequestMapping(value = "/deletenote/{id}", method = RequestMethod.DELETE)
-	public ResponseEntity<Response> deleteNote(@PathVariable("id") int id,
-			@RequestAttribute("loggedInUser") User user) {
+	@RequestMapping(value = "/deletenote", method = RequestMethod.DELETE)
+	public ResponseEntity<Response> deleteNote(@RequestBody Note note) {
 		try {
-
-			noteService.deleteNote(id);
-			response.setStatus(1);
-			response.setMsg("Note deleted");
-			return new ResponseEntity<Response>(response, HttpStatus.OK);
-
+			noteService.deleteNote(note.getNoteId());
 		} catch (Exception e) {
-
 			e.printStackTrace();
 			response.setStatus(-1);
 			response.setMsg("Note could not be saved");
 			return new ResponseEntity<Response>(response, HttpStatus.CONFLICT);
-
 		}
-	}
-
-	@RequestMapping(value = "/allnotes", method = RequestMethod.GET)
-	public ResponseEntity<Set<Note>> getNotes(@RequestAttribute("loggedInUser") User user) {
-
-		if (user != null) {
-			Set<Note> notes = noteService.getNotes(user.getId());
-			return ResponseEntity.ok(notes);
-		} else {
-			return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(null);
-		}
+		response.setStatus(1);
+		response.setMsg("Note deleted");
+		return new ResponseEntity<Response>(response, HttpStatus.OK);
 	}
 	
-	@RequestMapping(value = "/archive/{id}", method = RequestMethod.DELETE)
-	public ResponseEntity<Response> archive(@PathVariable("id") int id,
-			@RequestAttribute("loggedInUser") User user) {
-		
+	
+	
+	
+	
+	
+	
+	
+	/*@RequestMapping(value = "/deletenote/{id}", method = RequestMethod.DELETE)
+	public ResponseEntity<Response> deleteNote(@PathVariable("id") int id, @RequestAttribute("userId") int userId) {
 		try {
-
-			noteService.archive(id);
-			response.setStatus(1);
-			response.setMsg("Note archived");
-			return new ResponseEntity<Response>(response, HttpStatus.OK);
-
+			noteService.deleteNote(id);
 		} catch (Exception e) {
+			e.printStackTrace();
+			response.setStatus(-1);
+			response.setMsg("Note could not be saved");
+			return new ResponseEntity<Response>(response, HttpStatus.CONFLICT);
+		}
+		response.setStatus(1);
+		response.setMsg("Note deleted");
+		return new ResponseEntity<Response>(response, HttpStatus.OK);
+	}*/
 
+	@RequestMapping(value = "/allnotes", method = RequestMethod.GET)
+	public ResponseEntity<Set<Note>> getNotes(@RequestAttribute("userId") int userId) {
+		Set<Note> notes = noteService.getNotes(userId);
+		return ResponseEntity.ok(notes);
+	}
+
+	@RequestMapping(value = "/archive/{id}", method = RequestMethod.DELETE)
+	public ResponseEntity<Response> archive(@PathVariable("id") int id, @RequestAttribute("userId") int userId) {
+		try {
+			noteService.archive(id);
+		} catch (Exception e) {
 			e.printStackTrace();
 			response.setStatus(-1);
 			response.setMsg("Note could not be archive");
 			return new ResponseEntity<Response>(response, HttpStatus.CONFLICT);
-
 		}
+		response.setStatus(1);
+		response.setMsg("Note archived");
+		return new ResponseEntity<Response>(response, HttpStatus.OK);
 	}
 }

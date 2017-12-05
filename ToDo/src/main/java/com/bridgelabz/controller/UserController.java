@@ -34,7 +34,7 @@ public class UserController {
 
 	@Autowired
 	private SendEmail sendMail;
-	
+
 	Response resp = new Response();
 
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
@@ -44,7 +44,7 @@ public class UserController {
 		System.out.println("In register api=");
 		Response resp = new Response();
 		UserErrorResponse err = new UserErrorResponse();
-		
+
 		userValidation.validate(user, result);
 		String url = request.getRequestURL().toString();
 
@@ -74,25 +74,24 @@ public class UserController {
 		return new ResponseEntity<Response>(err, HttpStatus.NOT_ACCEPTABLE);
 
 	}
-	
-	
+
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public ResponseEntity<Response> login(@RequestBody Login login, HttpServletRequest request,
 			HttpServletResponse response) {
-		
+
 		String jwtToken = userService.authenticateUser(login.getEmail(), login.getPassword());
-		
-		System.out.println("Tokenis="+jwtToken);
-		
+
+		System.out.println("Tokenis=" + jwtToken);
+
 		if (jwtToken == null) {
 			resp.setStatus(-1);
 			resp.setMsg("Invalid user credential, user not present");
 			return new ResponseEntity<Response>(resp, HttpStatus.UNAUTHORIZED);
 		}
 
-	/*
-		HttpHeaders headers = new HttpHeaders();
-		headers.add("jwt", jwtToken);*/
+		/*
+		 * HttpHeaders headers = new HttpHeaders(); headers.add("jwt", jwtToken);
+		 */
 
 		resp.setStatus(1);
 		resp.setMsg(jwtToken);
@@ -127,15 +126,15 @@ public class UserController {
 	@RequestMapping(value = "/forgotPassword", method = RequestMethod.POST)
 	public ResponseEntity<Response> forgotProcess(@RequestBody User user, HttpServletRequest request,
 			HttpServletResponse response) {
-		
+
 		User updatedUser = userService.getUserByEmailId(user.getEmail());
 
-		if (updatedUser == null){
+		if (updatedUser == null) {
 			resp.setStatus(-1);
 			resp.setMsg("Enter a valid Email");
 			return new ResponseEntity<Response>(resp, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-		
+
 		String accessToken = TokenGenerator.generate(updatedUser.getId());
 
 		sendMail.sendForgotMail(user.getEmail(), accessToken);
@@ -146,67 +145,72 @@ public class UserController {
 		return entity;
 	}
 
-/*	@RequestMapping(value = "/resetPassword/{token:.+}", method = RequestMethod.POST)
-	public ResponseEntity<String> resetPassword(@PathVariable("token") String token, @RequestBody User user,
-			HttpServletRequest request, HttpServletResponse response) {
+	/*
+	 * @RequestMapping(value = "/resetPassword/{token:.+}", method =
+	 * RequestMethod.POST) public ResponseEntity<String>
+	 * resetPassword(@PathVariable("token") String token, @RequestBody User user,
+	 * HttpServletRequest request, HttpServletResponse response) {
+	 * 
+	 * int id = VerifyJwt.verify(token);
+	 * 
+	 * try {
+	 * 
+	 * userService.updateUser(id, user.getPassword()); return
+	 * ResponseEntity.ok("success");
+	 * 
+	 * } catch (Exception e) { e.printStackTrace(); }
+	 * 
+	 * return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).
+	 * body("Password not reset"); }
+	 */
 
-		int id = VerifyJwt.verify(token);
-
-		try {
-
-			userService.updateUser(id, user.getPassword());
-			return ResponseEntity.ok("success");
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-		return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Password not reset");
-	}*/
-	
 	@RequestMapping(value = "/resetPasswords", method = RequestMethod.POST)
-	public ResponseEntity<Response> resetPassword(@RequestBody User user,
-			HttpServletRequest request, HttpServletResponse response) {
+	public ResponseEntity<Response> resetPassword(@RequestBody User user, HttpServletRequest request,
+			HttpServletResponse response) {
 
 		System.out.println("In reset password ...");
-		
+
 		String token = request.getHeader("resettoken");
-		
-		System.out.println("Token is="+token);
-		
+
+		System.out.println("Token is=" + token);
+
 		int id = VerifyJwt.verify(token);
 
 		try {
 
 			userService.updateUser(id, user.getPassword());
-			
-			resp.setStatus(1);
-			resp.setMsg("Password Reset Successfully");
-			ResponseEntity<Response> entity = new ResponseEntity<Response>(resp, HttpStatus.OK);
-			return entity;
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
+			resp.setStatus(1);
+			resp.setMsg("Password Not reset");
+			return new ResponseEntity<Response>(resp, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		resp.setStatus(1);
-		resp.setMsg("Password Not reset");
-		return new ResponseEntity<Response>(resp, HttpStatus.INTERNAL_SERVER_ERROR);
+		resp.setMsg("Password Reset Successfully");
+		ResponseEntity<Response> entity = new ResponseEntity<Response>(resp, HttpStatus.OK);
+		return entity;
+
 	}
 
 	@RequestMapping(value = "/home")
-	public ResponseEntity<String> home() {
+	public ResponseEntity<Response> home(HttpServletRequest request, HttpServletResponse response) {
 
 		System.out.println("In home page");
-		
-		try {
 
-			return ResponseEntity.ok("success");
+		String token = request.getHeader("token");
 
-		} catch (Exception e) {
-			e.printStackTrace();
+		System.out.println("Token is=" + token);
+
+		if (token.equals("")) {
+			resp.setStatus(-1);
+			resp.setMsg("Please Login");
+			return new ResponseEntity<Response>(resp, HttpStatus.UNAUTHORIZED);
 		}
+		resp.setStatus(1);
+		resp.setMsg("Authorized");
+		return new ResponseEntity<Response>(resp, HttpStatus.OK);
 
-		return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Please Login First");
 	}
 
 }
