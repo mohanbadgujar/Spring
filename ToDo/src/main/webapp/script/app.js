@@ -38,6 +38,12 @@ toDo.config([ '$stateProvider', '$urlRouterProvider',
 				templateUrl : 'template/home.html',
 				controller : 'homeController'
 			});
+			
+			/*$stateProvider.state('archive', {
+				url : '/archive',
+				templateUrl : 'template/archive.html',
+				controller : 'archiveController'
+			});*/
 
 			$urlRouterProvider.otherwise('login');
 		} ]);

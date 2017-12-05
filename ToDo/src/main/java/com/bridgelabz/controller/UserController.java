@@ -210,7 +210,5 @@ public class UserController {
 		resp.setStatus(1);
 		resp.setMsg("Authorized");
 		return new ResponseEntity<Response>(resp, HttpStatus.OK);
-
 	}
-
 }

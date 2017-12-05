@@ -55,30 +55,8 @@ public class NoteController {
 		return new ResponseEntity<Response>(response, HttpStatus.OK);
 	}
 
-	@RequestMapping(value = "/deletenote", method = RequestMethod.DELETE)
-	public ResponseEntity<Response> deleteNote(@RequestBody Note note) {
-		try {
-			noteService.deleteNote(note.getNoteId());
-		} catch (Exception e) {
-			e.printStackTrace();
-			response.setStatus(-1);
-			response.setMsg("Note could not be saved");
-			return new ResponseEntity<Response>(response, HttpStatus.CONFLICT);
-		}
-		response.setStatus(1);
-		response.setMsg("Note deleted");
-		return new ResponseEntity<Response>(response, HttpStatus.OK);
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	/*@RequestMapping(value = "/deletenote/{id}", method = RequestMethod.DELETE)
-	public ResponseEntity<Response> deleteNote(@PathVariable("id") int id, @RequestAttribute("userId") int userId) {
+	@RequestMapping(value = "/deletenote/{id}", method = RequestMethod.DELETE)
+	public ResponseEntity<Response> deleteNote(@PathVariable("id") int id) {
 		try {
 			noteService.deleteNote(id);
 		} catch (Exception e) {
@@ -90,7 +68,7 @@ public class NoteController {
 		response.setStatus(1);
 		response.setMsg("Note deleted");
 		return new ResponseEntity<Response>(response, HttpStatus.OK);
-	}*/
+	}
 
 	@RequestMapping(value = "/allnotes", method = RequestMethod.GET)
 	public ResponseEntity<Set<Note>> getNotes(@RequestAttribute("userId") int userId) {
@@ -98,8 +76,8 @@ public class NoteController {
 		return ResponseEntity.ok(notes);
 	}
 
-	@RequestMapping(value = "/archive/{id}", method = RequestMethod.DELETE)
-	public ResponseEntity<Response> archive(@PathVariable("id") int id, @RequestAttribute("userId") int userId) {
+	@RequestMapping(value = "/archive/{id}", method = RequestMethod.PUT)
+	public ResponseEntity<Response> archive(@PathVariable("id") int id) {
 		try {
 			noteService.archive(id);
 		} catch (Exception e) {

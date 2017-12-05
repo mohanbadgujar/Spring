@@ -25,26 +25,29 @@
 
 						<div id="edittitle" contenteditable="true" ng-bind="note.title"></div>
 						<br>
-						<div id="editdescription" contenteditable="true" ng-bind="note.description"></div>
+						<div id="editdescription" contenteditable="true"
+							ng-bind="note.description"></div>
 						<br>
-						
+
 						<div class="dropdown" style="float: left">
-								<a data-toggle="dropdown"><img alt="color" src="images/menu.svg" height="18px"></a>
-								<ul class="dropdown-menu">
-									<li><a href="" ng-click="deleteNote(note)" >Delete</a></li>
-									<li><a href="" ng-click="updateNote(note)" >Update</a></li>
-									<li><a href="">Make a copy</a></li>
-									<li><a href="">Copy Google Doc</a></li>
-								</ul>
-							</div>
-						
+							<a data-toggle="dropdown"><img alt="color"
+								src="images/menu.svg" height="18px"></a>
+							<ul class="dropdown-menu">
+								<li><a href="" ng-click="deleteNote(note)">Delete</a></li>
+								<li><a href="" ng-click="updateNote(note)">Update</a></li>
+								<li><a href="">Make a copy</a></li>
+								<li><a href="">Copy Google Doc</a></li>
+							</ul>
+						</div>
+
 						<div>
 							<img alt="color" src="images/colorpallete.svg" height="18px">
 							<img alt="reminder" src="images/reminder.svg" height="15px">
 							<img alt="image" src="images/image.svg" height="20px"> <img
-								alt="archive" src="images/archive.svg" height="20px">
+								alt="archive" ng-click="archiveNote(note)"
+								src="images/archive.svg" height="20px">
 							<!-- <button ng-click="deleteNote(note)">DELETE</button>  -->
-							
+
 							<br>
 						</div>
 					</div>

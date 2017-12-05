@@ -5,7 +5,7 @@ toDo.factory('homeService', function($http, $location) {
 	var abc = {};
 	
 	
-	/*//check user status
+	//check user status
 	abc.checkLoginStatus = function(url,method) {
 		return $http({
 			method : method,
@@ -14,7 +14,7 @@ toDo.factory('homeService', function($http, $location) {
 				'token':localStorage.getItem('token')
 			}
 		})
-	}*/
+	}
 	
 	//get all notes form database
 	abc.getData = function(url,method) {
@@ -40,11 +40,10 @@ toDo.factory('homeService', function($http, $location) {
 	}
 	
 	//Delete note from database
-	abc.deleteData = function(url,method,object) {
+	abc.deleteNote = function(url,method) {
 		return $http({
 			method : method,
 			url : url,
-			data: object,
 			headers: {
 				'token':localStorage.getItem('token')
 			}
@@ -57,6 +56,17 @@ toDo.factory('homeService', function($http, $location) {
 			method : method,
 			url : url,
 			data: object,
+			headers: {
+				'token':localStorage.getItem('token')
+			}
+		})
+	}
+	
+	//archive note
+	abc.archiveNote = function(url,method) {
+		return $http({
+			method : method,
+			url : url,
 			headers: {
 				'token':localStorage.getItem('token')
 			}
