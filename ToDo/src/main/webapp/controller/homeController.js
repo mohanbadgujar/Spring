@@ -133,7 +133,5 @@ toDo
 							$scope.msg = response.data;
 						});
 					}	
-					
-					
-					
+
 				});
