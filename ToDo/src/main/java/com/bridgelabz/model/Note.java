@@ -30,6 +30,14 @@ public class Note {
 	private Date createdAt;
 
 	private Date modifiedAt;
+	
+	private boolean archive;
+	
+	private boolean pin;
+	
+	private boolean trash;
+	
+	private boolean emptyTrash;
 
 	@ManyToOne
 	@JoinColumn(name = "user_id")
@@ -81,6 +89,38 @@ public class Note {
 
 	public void setModifiedAt(Date modifiedAt) {
 		this.modifiedAt = modifiedAt;
+	}
+
+	public boolean isArchive() {
+		return archive;
+	}
+
+	public void setArchive(boolean archive) {
+		this.archive = archive;
+	}
+
+	public boolean isPin() {
+		return pin;
+	}
+
+	public void setPin(boolean pin) {
+		this.pin = pin;
+	}
+
+	public boolean isTrash() {
+		return trash;
+	}
+
+	public void setTrash(boolean trash) {
+		this.trash = trash;
+	}
+
+	public boolean isEmptyTrash() {
+		return emptyTrash;
+	}
+
+	public void setEmptyTrash(boolean emptyTrash) {
+		this.emptyTrash = emptyTrash;
 	}
 
 }

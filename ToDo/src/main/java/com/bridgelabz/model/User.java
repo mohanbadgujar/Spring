@@ -30,10 +30,12 @@ public class User {
 	private String email;
 	
 	private String password;
-
+	
 	private String mobile;
 
 	private boolean active;
+
+	private String image;
 	
 	@JsonIgnore
 	@OneToMany(mappedBy = "user")
@@ -94,4 +96,12 @@ public class User {
 	public void setNotes(Set<Note> notes) {
 		this.notes = notes;
 	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}	
 }
